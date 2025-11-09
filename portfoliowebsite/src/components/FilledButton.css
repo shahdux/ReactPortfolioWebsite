@@ -1,0 +1,18 @@
+.filledButton{
+        display: flex;
+    width: 199px;
+    height: 52px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    border-radius: 62px;
+    background: #FFF;
+}
+.filledbuttontext{
+    color: #2D39B8;
+    font-family: "Gooper Trial";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}

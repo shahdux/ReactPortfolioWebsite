@@ -7,11 +7,14 @@
     align-items: center;
     position: fixed;
     z-index: 900;
-    height: 110px;
+  
 
 }
 .forlinks{
     display: flex;
     justify-content: center;
     gap: 30px;
+}
+.logo {
+    width: 44px;
 }
