@@ -1,0 +1,18 @@
+.downloadButton{
+  display: flex;
+width: 199px;
+height: 54px;
+border-radius: 62px;
+border: 1px solid #FFF;
+justify-content: center;
+align-items: center;
+gap: 8px;
+}
+.buttonText{
+    color: #FFF;
+font-family: "Gooper Trial";
+font-size: 18px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}

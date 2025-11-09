@@ -4,7 +4,7 @@ import NavLinkTitle from './NavLinkTitle';
 import logo from '../assets/logo.svg';
 const Navbar = () => {
     return ( 
-        <div className='header'>
+        <div className='navbar'>
             <img src={logo} alt="" />
               <div class="forlinks">
                 <NavLinkTitle NavlinkTitle="Services"/>
