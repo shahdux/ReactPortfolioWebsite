@@ -6,4 +6,4 @@ const SectionSubtitle = (props) => {
      );
 }
  
-export default SectionSubtitle;props
+export default SectionSubtitle;

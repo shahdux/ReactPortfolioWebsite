@@ -1,0 +1,40 @@
+.project1{
+    display: flex;
+  
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+height: 568px;
+border-radius: 10px;
+background: #4C0C0C;
+box-shadow: 0 4px 19px 0 rgba(200, 185, 185, 0.20);
+/* background-image: url(images/bgdomty.svg); */
+    background-size: cover;
+    position: sticky;
+        top: 130px;
+}
+.projectTitle{
+    color: #FBF5F5;
+    font-family: "Gooper Trial";
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin: 0;
+    margin-bottom: 12px;
+}
+.projectDescription{
+    color: #FBF5F5;
+    font-family: Poppins;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin: 0;
+    width: 650px;
+}
+.projectBg{
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+}
