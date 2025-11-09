@@ -1,0 +1,13 @@
+.navLink{
+    color: #0F133C;
+font-family: Poppins;
+font-size: 20px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+transition: 0.5s ease;
+}
+.navLink:hover{
+   
+       color: #2D39B8;
+}
