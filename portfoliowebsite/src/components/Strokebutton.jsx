@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import "./Button.css"
-const Button = (props) => {
+import "./Strokebutton.css"
+const Strokebutton = (props) => {
     return ( 
         <div className='downloadButton'>
             <img src={props.iconimg} alt="" />
@@ -9,4 +9,4 @@ const Button = (props) => {
      );
 }
  
-export default Button;
+export default Strokebutton;
