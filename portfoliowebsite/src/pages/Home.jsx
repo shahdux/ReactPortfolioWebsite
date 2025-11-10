@@ -11,7 +11,8 @@ import purpbg from "../assets/purp.svg"
 import art from "../assets/artmento.svg"
 import p2bg from "../assets/storybg.svg"
 import story from "../assets/lap.svg";
-import arrowdiv from "../assets/arrowdiv.svg"
+import arrowdiv from "../assets/SPINARRROW.svg";
+import CircularText from '../components/CircularText ';
 
 
 
@@ -27,6 +28,16 @@ const Home = () => {
             <SectionTitle sectiontitlename="Featured Projects"/>
             <SectionSubtitle sectionsubtitlename="Projects that best capture my approach to creating meaningful user experiences."/>
                     <img src={arrowdiv} alt="" class="animate"/>
+                    <CircularText
+  text=" DISCOVER MY WORK * VIEW ALL PROJECTS *"
+  onHover="speedUp"
+  spinDuration={20}
+  className="custom-class"
+  
+/>
+
+
+
 
             </div>
             <div className='for3projects'>
@@ -49,6 +60,7 @@ const Home = () => {
                                 projectimg={story}
                 projectDescription="A 3D interactive story-telling website that immerses users into a captivating experience.  "
                 />
+                
             </div>
 
         </div>
