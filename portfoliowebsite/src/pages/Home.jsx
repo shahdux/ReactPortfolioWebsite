@@ -1,4 +1,5 @@
-import React, { Component } from 'react';
+// import React, { Component } from 'react';
+import React, { useEffect, useRef } from "react";
 import "./Home.css";
 import Navbar from '../components/Navbar';
 import Header from '../components/Header';
@@ -25,6 +26,7 @@ import BounceCards from '../components/BounceCards'
 import SubscriptionSection from '../components/SubscriptionSection';
 import Footer from '../components/Footer';
 
+// import React, { useEffect, useRef } from "react";
 
 
 
@@ -49,6 +51,28 @@ const transformStyles = [
   // "rotate(5deg) translate(70px)",
   // "rotate(-5deg) translate(150px)"
 ];
+const scrollRef = useRef(null);
+
+  useEffect(() => {
+    const section = scrollRef.current;
+
+    const handleScroll = () => {
+      const scrollTop = window.scrollY;
+      const sectionTop = section.offsetTop;
+      const sectionHeight = section.offsetHeight;
+
+      const scrollProgress = Math.min(
+        Math.max((scrollTop - sectionTop) / (sectionHeight - window.innerHeight), 0),
+        1
+      );
+
+      const translateX = scrollProgress * -200; // adjust distance
+      section.querySelector(".categories").style.transform = `translateX(${translateX}vw)`;
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
     return ( 
         <>
         <Navbar/>
@@ -100,7 +124,8 @@ const transformStyles = [
     {/* <img src="images/purpv.svg" alt="" class="imgst"> */}
     <img src={labmocukup} alt="videomockup" class="imgst" />
 </div>
-       
+       <div className='horizontal-scroll-section' ref={scrollRef}>
+
 <div class="categories">
 
 <ProjectCategoryCard
@@ -127,6 +152,7 @@ projectdescription="Animated visuals that bring stories, concepts, and interface
 
 
 </div>
+       </div>
 
 <div className='testimonialsSection'>
   <SectionTitle sectiontitlename="Collaborations & Feedback"/>

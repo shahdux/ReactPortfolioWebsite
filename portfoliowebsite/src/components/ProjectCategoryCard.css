@@ -1,6 +1,7 @@
 .card {
   display: flex;
   flex-direction: column;
+      margin-right: 50px;
   
 }
 .forpgdes{
@@ -28,4 +29,9 @@ font-weight: 400;
 line-height: normal;
 margin: 0;
 margin-top: 12px;
+}
+.cardone{
+  display: flex;
+  flex-direction: column;
+      margin-right: 50px;
 }
