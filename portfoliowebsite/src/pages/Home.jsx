@@ -13,6 +13,11 @@ import p2bg from "../assets/storybg.svg"
 import story from "../assets/lap.svg";
 import arrowdiv from "../assets/SPINARRROW.svg";
 import CircularText from '../components/CircularText ';
+import labmocukup from "../assets/labm.svg";
+import TextButton from '../components/TextButton';
+import buttonArrow from "../assets/whitearrow.svg"
+
+
 
 
 
@@ -64,7 +69,13 @@ const Home = () => {
             </div>
 
         </div>
-        
+        <div class="forvideoplacegolder">
+    {/* <img src="images/purpv.svg" alt="" class="imgst"> */}
+    <img src={labmocukup} alt="videomockup" class="imgst" />
+</div>
+        <TextButton textbuttontitle="View project" textColor="white"
+        iconimage={buttonArrow}
+        />
         </>
      );
 }

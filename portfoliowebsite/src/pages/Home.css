@@ -32,3 +32,14 @@ display: flex;
     margin-top: 130px;
     position: absolute;
 }
+.forvideoplacegolder{
+    width: 100%;
+    background-image: url("../assets/textbg.svg");
+    height: 170vh;
+    background-size: cover;
+}
+.imgst{
+    width: 100%;
+    margin: 0 auto;
+    margin-top: -180px;
+}

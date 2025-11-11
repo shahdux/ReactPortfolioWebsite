@@ -9,6 +9,7 @@ import displayCards from '../assets/hero2.svg';
 
 
 const Header = () => {
+    
     return ( 
        <>
        <div className='heroSection'>
@@ -29,6 +30,7 @@ const Header = () => {
            
         </div>
     <img src={displayCards} alt="" class="hero2" />
+    
 
        </div>
        

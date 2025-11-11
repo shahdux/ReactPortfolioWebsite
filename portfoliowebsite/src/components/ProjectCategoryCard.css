@@ -1,0 +1,36 @@
+.card {
+    display: flex;
+    flex-direction: column;
+  /* height: 70%;
+  flex: 1 0 50%; */
+  margin-right: 50px;
+  /* border-radius: 14px;
+  box-shadow: 
+    rgba(0, 0, 0, 0.1) 0 10px 15px,
+    rgba(0, 0, 0, 0.05) 0 4px 6px -2px; */
+}
+.forpgdes{
+    display: flex;
+    flex-direction: column;
+  margin-top: 20px;
+}
+.projectCategoryTitle{
+    color: #1F266D;
+font-family: "Gooper Trial";
+font-size: 24px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+text-transform: uppercase;
+margin: 0;
+}
+.nameDes{
+    color: #1F266D;
+font-family: Poppins;
+font-size: 18px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+margin: 0;
+margin-top: 12px;
+}

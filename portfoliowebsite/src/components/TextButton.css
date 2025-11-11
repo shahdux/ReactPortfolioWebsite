@@ -1,0 +1,12 @@
+.textButton{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.textclass{
+font-family: "Gooper Trial";
+font-size: 20px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+}

@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
 import "./FeaturedCard.css";
-import domty from "../assets/domtymockup.svg"
-import redbg from "../assets/redbg.svg"
+import TextButton from './TextButton';
+import buttonArrow from "../assets/whitearrow.svg"
+
+
 
 const FeaturedCard = (props) => {
     return ( 
@@ -11,6 +13,11 @@ const FeaturedCard = (props) => {
         <div className="projectDesDiv">
             <h4 className="projectTitle">{props.projectTitlename}</h4>
             <p className="projectDescription">{props.projectDescription}</p>
+            <TextButton
+            textColor="white"
+            textbuttontitle="View project"
+            iconimage={buttonArrow}
+            />
            
         </div>
     </div>
