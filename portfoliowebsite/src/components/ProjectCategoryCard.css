@@ -1,18 +1,13 @@
 .card {
-    display: flex;
-    flex-direction: column;
-  /* height: 70%;
-  flex: 1 0 50%; */
-  margin-right: 50px;
-  /* border-radius: 14px;
-  box-shadow: 
-    rgba(0, 0, 0, 0.1) 0 10px 15px,
-    rgba(0, 0, 0, 0.05) 0 4px 6px -2px; */
+  display: flex;
+  flex-direction: column;
+  
 }
 .forpgdes{
     display: flex;
     flex-direction: column;
   margin-top: 20px;
+  width: 627px;
 }
 .projectCategoryTitle{
     color: #1F266D;
