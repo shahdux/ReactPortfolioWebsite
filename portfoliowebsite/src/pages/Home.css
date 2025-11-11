@@ -43,3 +43,12 @@ display: flex;
     margin: 0 auto;
     margin-top: -180px;
 }
+.categories{
+    display: flex;
+    width: 100%;
+    height: auto;
+    padding: 100px 0px;
+    gap: 20px;
+    overflow: hidden;
+    
+}

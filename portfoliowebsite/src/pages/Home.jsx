@@ -17,6 +17,13 @@ import labmocukup from "../assets/labm.svg";
 import TextButton from '../components/TextButton';
 import buttonArrow from "../assets/whitearrow.svg"
 import ProjectCategoryCard from '../components/ProjectCategoryCard';
+import projectimg from "../assets/ux.svg";
+import projectimg2 from "../assets/graphic.svg";
+import coding from "../assets/coding.svg";
+import motion from "../assets/motion.svg";
+
+
+
 
 
 
@@ -75,8 +82,32 @@ const Home = () => {
     <img src={labmocukup} alt="videomockup" class="imgst" />
 </div>
        
+<div class="categories">
 
-<ProjectCategoryCard/>
+<ProjectCategoryCard
+projectcategoryimg={projectimg}
+projecttitle="UX/UI Projects"
+projectdescription="Crafting intuitive, user-centered interfaces that balance form and function across web and mobile platforms."
+/>
+<ProjectCategoryCard
+projectcategoryimg={projectimg2}
+projecttitle="Graphic Design Projects"
+projectdescription="Visual storytelling through branding, typography, layouts, and creative visuals for both digital and print."
+/>
+<ProjectCategoryCard
+projectcategoryimg={coding}
+projecttitle="Coding Projects"
+projectdescription="Interactive experiences and functional prototypes built with clean, scalable code — where design meets development."
+/><ProjectCategoryCard
+projectcategoryimg={motion}
+projecttitle="Motion Graphics Projects"
+projectdescription="Animated visuals that bring stories, concepts, and interfaces to life through motion and timing."
+/>
+
+
+
+
+</div>
 
 
 
