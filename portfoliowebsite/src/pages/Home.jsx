@@ -22,9 +22,11 @@ import projectimg from "../assets/ux.svg";
 import projectimg2 from "../assets/graphic.svg";
 import coding from "../assets/coding.svg";
 import motion from "../assets/motion.svg";
+
 import BounceCards from '../components/BounceCards'
 import SubscriptionSection from '../components/SubscriptionSection';
 import Footer from '../components/Footer';
+import videobg from "../assets/vd1.mp4";
 
 // import React, { useEffect, useRef } from "react";
 
@@ -122,7 +124,8 @@ const scrollRef = useRef(null);
         </div>
         <div class="forvideoplacegolder">
     {/* <img src="images/purpv.svg" alt="" class="imgst"> */}
-    <img src={labmocukup} alt="videomockup" class="imgst" />
+    <video src={videobg} class="imgst2" autoPlay loop></video>
+    {/* <img src={labmocukup} alt="videomockup" class="imgst" /> */}
 </div>
        <div className='horizontal-scroll-section' ref={scrollRef}>
 

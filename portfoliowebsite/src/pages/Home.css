@@ -37,11 +37,20 @@ display: flex;
     background-image: url("../assets/textbg.svg");
     height: 170vh;
     background-size: cover;
+        display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .imgst{
     width: 100%;
     margin: 0 auto;
     margin-top: -180px;
+}
+.imgst2{
+    width: 80%;
+    margin: 0 ;
+    margin-top: 20px;
+    border-radius: 35px;
 }
 .categories{
     /* display: flex;
