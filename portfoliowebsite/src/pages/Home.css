@@ -52,3 +52,42 @@ display: flex;
     overflow: hidden;
     
 }
+.testimonialsSection{
+    display: flex;
+  height: 100vh;
+   flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+.test1{
+     color: #1F266D;
+font-family: Poppins;
+font-size: 18px;
+font-style: normal;
+font-weight: 400;
+line-height: 179.982%; /* 32.397px */
+}
+.role{
+    color: #1F266D;
+font-family: Poppins;
+font-size: 18px;
+font-style: normal;
+font-weight: 400;
+line-height: 179.982%; /* 32.397px */
+margin: 0;
+}
+.namewrole{
+    display: flex;
+    flex-direction: column;
+    
+}
+.namec{
+    color: #1F266D;
+font-family: Poppins;
+font-size: 20px;
+font-style: normal;
+font-weight: 600;
+line-height: 179.982%; /* 35.996px */
+margin: 0;
+}
