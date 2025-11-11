@@ -5,6 +5,7 @@ const Strokebutton = (props) => {
         <div className='downloadButton'>
             <img src={props.iconimg} alt="" />
             <p className='buttonText'>{props.buttonTextTitle}</p>
+            <img src={props.iconimg2} alt="" />
         </div>
      );
 }

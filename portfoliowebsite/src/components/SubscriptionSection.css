@@ -1,0 +1,91 @@
+.letsWorkdiv{
+    display: flex;
+    flex-direction: column;
+    height: 80vh;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    background-size: cover;
+    background-image: url("../assets/subscriptionbg.svg");
+    background-repeat: no-repeat;
+    
+}
+.letsTitle{
+    color: #FFF;
+font-family: "Gooper Trial";
+font-size: 48.09px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+margin: 0;
+}
+.letsDes{
+    width: 908px;
+    color: #FFF;
+text-align: center;
+font-family: Poppins;
+font-size: 18px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+margin: 0;
+margin-top: 32px ;
+margin-bottom: 50px;
+}
+.for2buttons{
+    display: flex;
+    gap: 20px;
+}
+.contactButton{
+    display: flex;
+    justify-content: center;
+  align-items: center;
+  display: flex;
+width: 199px;
+height: 54px;
+
+justify-content: center;
+align-items: center;
+gap: 8px;
+border-radius: 62px;
+border: 1px solid #FFF;
+}
+.contactmetetx{
+   color: #FFF;
+font-family: "Gooper Trial";
+font-size: 18px;
+font-style: normal;
+font-weight: 500;
+line-height: normal; 
+}
+.inputc{
+    display: flex;
+width: 514px;
+height: 50px;
+align-items: center;
+gap: 10px;
+border-radius: 35px;
+background: #FFF;
+}
+
+input {
+  color: #0F133C;
+font-family: Poppins;
+font-size: 18px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+    padding-left: 20px;
+}
+
+input::placeholder {
+   /* padding-left: 20px; */
+   color: rgba(31, 38, 109, 0.57);
+font-family: Poppins;
+font-size: 18px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
