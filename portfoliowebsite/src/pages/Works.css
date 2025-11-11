@@ -2,3 +2,16 @@
  padding-top: 24px;
     width: 100%;
 }
+.topics{
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+        gap: 140px
+   
+}
+.workbg{
+      width: 100%;
+    position: absolute;
+    z-index: -1; 
+}

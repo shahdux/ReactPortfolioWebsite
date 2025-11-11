@@ -5,6 +5,7 @@ font-size: 24px;
 font-style: normal;
 font-weight: 400;
 line-height: normal;
+transition: 0.5s ease;
 }
 .bluemenutabtitle{
         color: #2D39B8;
@@ -14,4 +15,7 @@ font-size: 24px;
 font-style: normal;
 font-weight: 400;
 line-height: normal;
+}
+.menutabtitle:hover{
+ color: #2D39B8;
 }
