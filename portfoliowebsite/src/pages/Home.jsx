@@ -23,6 +23,7 @@ import coding from "../assets/coding.svg";
 import motion from "../assets/motion.svg";
 import BounceCards from '../components/BounceCards'
 import SubscriptionSection from '../components/SubscriptionSection';
+import Footer from '../components/Footer';
 
 
 
@@ -141,13 +142,13 @@ projectdescription="Animated visuals that bring stories, concepts, and interface
   animationStagger={0.08}
   easeType="elastic.out(1, 0.5)"
   transformStyles={transformStyles}
-  enableHover={false}
+  enableHover={true}
 />
 </div>
 
 
 <SubscriptionSection/>
-
+<Footer/>
 
 
 

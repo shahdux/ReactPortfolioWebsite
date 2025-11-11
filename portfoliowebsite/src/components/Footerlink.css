@@ -1,0 +1,14 @@
+.iconwdes{
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+.loctext{
+    color: #1F266D;
+font-family: Poppins;
+font-size: 18px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+margin: 0;
+}
