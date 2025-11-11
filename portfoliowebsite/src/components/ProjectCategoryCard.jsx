@@ -9,7 +9,7 @@ const ProjectCategoryCard = (props) => {
         
        
         <div class="cardone">
-            <img src={props.projectcategoryimg} alt="projectimg" />
+            <img src={props.projectcategoryimg} alt="projectimg" className='imgwidth' />
              <div class="forpgdes">
                <h5 class="projectCategoryTitle">{props.projecttitle}</h5>
                <p class="nameDes">{props.projectdescription}</p>

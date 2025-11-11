@@ -33,5 +33,8 @@ margin-top: 12px;
 .cardone{
   display: flex;
   flex-direction: column;
-      margin-right: 50px;
+      /* margin-right: 50px; */
+}
+.imgwidth {
+    width: 90%;
 }
