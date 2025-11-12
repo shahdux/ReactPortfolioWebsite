@@ -10,7 +10,7 @@ const ProjectDetails = () => {
     return ( 
         <>
         <Navbar/>
-        <div className='mockupHolder'>
+        <div className='mockupHolder22'>
 
         <div className="mockupText">
 <p className="mockTitle">Your all in one</p>
@@ -28,7 +28,7 @@ const ProjectDetails = () => {
      <img src={mockup3} alt="" className="widthimg"/>
     </div>
         </div>
-        <img src={secgradient} alt="" class="gradientdetails"/>
+        <img src={secgradient} alt="" className="gradientdetails"/>
 
         </>
      );

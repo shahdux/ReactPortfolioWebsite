@@ -60,9 +60,3 @@ margin-left: 10px;
 .projectcard1:hover .appdes{
     color: white;
 }
-.gradientdetails{
-     width: 100%;
-   position: absolute;
-   z-index: -1;
-      margin-top: -930px;
-}
