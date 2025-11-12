@@ -24,7 +24,8 @@ const Works = () => {
         
               <img className="heads" src={imgtitle}/>
               <div className="topics">
-             <SmallMenuTab menutabtitle="UX/UI"/>
+             <SmallMenuTab menutabtitle="UX/UI"
+             meucolor="#1423BA"/>
              <SmallMenuTab menutabtitle="Graphic Design"/>
               <SmallMenuTab menutabtitle="Motion Graphics"/>
                             <SmallMenuTab menutabtitle="Coding"/>

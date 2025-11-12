@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import "./NavLinkTitle.css"
 const NavLinkTitle = (props) => {
     return ( 
-        <p className='navLink'>{props.NavlinkTitle}</p>
+        <p className='navLink' style={{ color: props.linkcolor }}>{props.NavlinkTitle}</p>
      );
 }
  

@@ -83,7 +83,7 @@ const scrollRef = useRef(null);
 
             <SectionTitle sectiontitlename="Featured Projects"/>
             <SectionSubtitle sectionsubtitlename="Projects that best capture my approach to creating meaningful user experiences."/>
-                    <img src={arrowdiv} alt="" class="animate"/>
+                    <img src={arrowdiv} alt="" className="animate"/>
                     <CircularText
   text=" DISCOVER MY WORK * VIEW ALL PROJECTS *"
   onHover="speedUp"
