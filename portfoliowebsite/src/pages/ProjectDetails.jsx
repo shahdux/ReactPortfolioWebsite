@@ -8,9 +8,9 @@ import secgradient from "../assets/detailsgrad.svg";
 import circlean from "../assets/animatecirc.svg";
 import FeaturesCard from './../components/FeaturesCard';
 import n1 from "../assets/n1.svg";
-// import n2 from "../assets/n2.svg";
-// import n3 from "../assets/n3.svg";
-// import n4 from "../assets/n4.svg";
+import n2 from "../assets/n2.svg";
+import n3 from "../assets/n3.svg";
+import n4 from "../assets/n4.svg";
 
 
 
@@ -49,6 +49,25 @@ const ProjectDetails = () => {
 <FeaturesCard 
 numberimg={n1}
 featuretitlename="Moodboard Generator"
+featuretitledes="Users can easily book tickets for upcoming events, such as concerts, through the app for a experience."
+/>
+<FeaturesCard 
+numberimg={n2}
+featuretitlename="FILE SUMMARIZER"
+featuretitledes="Users can easily book tickets for upcoming events, such as concerts, through the app for a experience."
+/>
+
+  </div>
+   <div class="spacer2"></div>
+  <div class="firstcont">
+<FeaturesCard 
+numberimg={n3}
+featuretitlename="ART AI ASSISTANCE"
+featuretitledes="Users can easily book tickets for upcoming events, such as concerts, through the app for a experience."
+/>
+<FeaturesCard 
+numberimg={n4}
+featuretitlename="FEEDACK PROVIDER"
 featuretitledes="Users can easily book tickets for upcoming events, such as concerts, through the app for a experience."
 />
 
