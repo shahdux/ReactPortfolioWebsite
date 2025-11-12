@@ -1,0 +1,63 @@
+.mockupHolder22{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+.mockupText{
+  
+        padding-top: 115px;
+    margin-bottom: 35px;
+    display: flex;
+    flex-direction: column;
+  
+}
+.for3mockups{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    /* align-items: center; */
+}
+.fixedimg{
+        width: 20%;
+}
+
+.mockTitle{
+    color: #1F266D;
+text-align: center;
+font-family: Poppins;
+font-size: 24px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+margin: 0;
+}
+.mockfeature{
+    color: #1423BA;
+text-align: center;
+font-family: "Gooper Trial";
+font-size: 40px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+margin: 0;
+margin-bottom: 12px;
+}
+.mockupdes{
+    color: #1F266D;
+text-align: center;
+font-family: Poppins;
+font-size: 20px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+margin: 0;
+}
+.mockupText{
+  
+        padding-top: 115px;
+    margin-bottom: 35px;
+    display: flex;
+    flex-direction: column;
+  
+}
