@@ -30,6 +30,7 @@ import videobg from "../assets/vd1.mp4";
 
 
 
+
  
 
 
@@ -103,12 +104,15 @@ const scrollRef = useRef(null);
 
                 projectDescription="A rebranding of the well-known Egyptian company Domty, featuring interactive components and stunning visuals, and a modern and intuitive interface"
                 />
+                
                   <FeaturedCard
                 projectTitlename="Art Mentor App"
                   projectbgimg={purpbg}
                                 projectimg={art}
+                                path="/projectdetails"
                 projectDescription="An engaging app that helps designers start with their design thinking process such as generate ideas, create mood board, receive feedback and more."
                 />
+                
                   <FeaturedCard
                 projectTitlename="Story Website"
                   projectbgimg={p2bg}

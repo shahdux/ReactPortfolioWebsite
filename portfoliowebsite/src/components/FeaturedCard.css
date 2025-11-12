@@ -12,6 +12,7 @@ box-shadow: 0 4px 19px 0 rgba(200, 185, 185, 0.20);
     background-size: cover;
     position: sticky;
         top: 130px;
+        
 }
 .projectTitle{
     color: #FBF5F5;
@@ -37,4 +38,7 @@ box-shadow: 0 4px 19px 0 rgba(200, 185, 185, 0.20);
     position: absolute;
     z-index: -1;
     width: 100%;
+}
+.textdecnone{
+    text-decoration: none;
 }
