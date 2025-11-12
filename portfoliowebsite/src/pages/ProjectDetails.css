@@ -85,7 +85,7 @@ width: 30%;
     display: flex;
     flex-direction: column;
     gap: 50px;
-    padding-top: 50px;
+    padding-top: 100px;
 }
 .forcenteredTitles{
     display: flex;
@@ -94,6 +94,7 @@ width: 30%;
 }
 .animatecircle{
  margin: 0 auto;
+ margin-top: 20px;
 }
 .featuresTitle{
     color: #FFF;

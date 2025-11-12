@@ -11,6 +11,8 @@ import n1 from "../assets/n1.svg";
 import n2 from "../assets/n2.svg";
 import n3 from "../assets/n3.svg";
 import n4 from "../assets/n4.svg";
+import SectionTitle from '../components/SectionTitle';
+import SectionSubtitle from '../components/SectionSubtitle';
 
 
 
@@ -41,7 +43,9 @@ const ProjectDetails = () => {
         <div className='featuresSection'>
 
          <div class="forcenteredTitles">
-        <p class="featuresTitle">Explore features</p>
+        {/* <p class="featuresTitle">Explore features</p> */}
+        <SectionTitle sectiontitlename="Explore features"
+        color2="white"/>
 <img src={circlean} alt="" class="animatecircle"/>
     </div>
   <div class="imgwpg">
