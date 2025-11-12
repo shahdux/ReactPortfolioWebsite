@@ -11,6 +11,8 @@ import projectimg3 from "../assets/whattoeat.svg";
 import projectimg4 from "../assets/event.svg";
 import projectimg5 from "../assets/storyweb.svg";
 import projectimg6 from "../assets/esport.svg";
+import SubscriptionSection from '../components/SubscriptionSection';
+import Footer from '../components/Footer';
 
 
 
@@ -67,6 +69,8 @@ const Works = () => {
                 
             </div>
         </div>
+        <SubscriptionSection/>
+        <Footer/>
         
         
         
