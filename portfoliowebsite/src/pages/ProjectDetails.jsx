@@ -15,6 +15,9 @@ import SectionTitle from '../components/SectionTitle';
 import SectionSubtitle from '../components/SectionSubtitle';
 import SubscriptionSection from '../components/SubscriptionSection';
 import Footer from '../components/Footer';
+import CircularText from '../components/CircularText ';
+import arrowdivwhite from "../assets/whitearrowspin.svg";
+
 
 
 
@@ -48,7 +51,15 @@ const ProjectDetails = () => {
         {/* <p class="featuresTitle">Explore features</p> */}
         <SectionTitle sectiontitlename="Explore features"
         color2="white"/>
-<img src={circlean} alt="" class="animatecircle"/>
+                            <img src={arrowdivwhite} alt="" class="animatewhite"/>
+        
+   <CircularText
+  text=" DISCOVER MY WORK * VIEW ALL PROJECTS *"
+  onHover="speedUp"
+  spinDuration={20}
+  className="custom-class2"
+  
+/>
     </div>
   <div class="imgwpg">
 <div class="firstcont">

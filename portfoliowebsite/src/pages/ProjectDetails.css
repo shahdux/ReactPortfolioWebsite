@@ -78,6 +78,7 @@ width: 30%;
     position: fixed;
     padding-bottom: 70px;
     width: 15%;
+    z-index: 1;
 }
 .featuresSection{
     width: 100%;
@@ -91,10 +92,16 @@ width: 30%;
     display: flex;
     flex-direction: column;
     /* gap: 20px; */
+        justify-content: center;
+    align-items: center;
 }
 .animatecircle{
  margin: 0 auto;
  margin-top: 20px;
+}
+.animatewhite{
+      margin-top: 70px;
+    position: absolute;
 }
 .featuresTitle{
     color: #FFF;
@@ -116,4 +123,7 @@ line-height: normal;
     gap: 50px;
     align-items: center;
     justify-content: center;
+}
+.custom-class2{
+    color: white;
 }
