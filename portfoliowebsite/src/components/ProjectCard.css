@@ -1,8 +1,7 @@
-/* .projectcard1{
+.projectcard1{
  width: 372px;
     height: 436px;
     border-radius: 17.433px;
-    background-image: url(images/imgc1.svg) ;
     display: flex;
     align-items: end;
     transition: ease 0.5s;
@@ -10,8 +9,8 @@
 .folder{
    position: absolute;
    z-index: 1;
-     margin-left: -23px;
-    margin-top: -93px;
+        margin-left: -18px;
+      margin-top: -93px;
 }
 
 .apptitle{
@@ -44,4 +43,4 @@ font-weight: 400;
 line-height: normal;
 margin-top: 8px;
 margin-left: 10px;
-} */
+}

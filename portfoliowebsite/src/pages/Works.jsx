@@ -4,6 +4,8 @@ import Navbar from '../components/Navbar';
 import imgtitle from "../assets/workss.svg"
 import SmallMenuTab from '../components/SmallMenuTab';
 import gradientbg from "../assets/gradient.svg"
+import ProjectCard from '../components/ProjectCard';
+import projectimg from "../assets/gizaimg.svg"
 const Works = () => {
     return (
         <>
@@ -29,7 +31,15 @@ const Works = () => {
     </div> */}
              
 
-        
+        <div className='forallcards'>
+            <div className='textwcards'>
+                <ProjectCard projectName2="Giza Zoo Website"
+                projectimgbg={projectimg}
+                projectDes2="A rebranding of the popular Gizo Zoo in Egypt, showcasing the innovation and newest updates....[+]"/>
+                 {/* <ProjectCard projectName2="Giza Zoo Website"
+                projectDes2="A rebranding of the popular Gizo Zoo in Egypt, showcasing the innovation and newest updates....[+]"/> */}
+            </div>
+        </div>
         
         
         
