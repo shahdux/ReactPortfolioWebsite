@@ -3,7 +3,7 @@ import "./Works.css"
 import Navbar from '../components/Navbar';
 import imgtitle from "../assets/workss.svg"
 import SmallMenuTab from '../components/SmallMenuTab';
-import gradientbg from "../assets/gradient.svg"
+import gradientbg from "../assets/gradbg.svg"
 import ProjectCard from '../components/ProjectCard';
 import projectimg from "../assets/gizaimg.svg";
 import projectimg2 from "../assets/arwebsite.svg";
