@@ -1,0 +1,34 @@
+
+.featureTitle{
+    color: #1F266D;
+text-align: center;
+font-family: "Gooper Trial";
+font-size: 24px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+text-transform: uppercase;
+margin: 0;
+margin-bottom: 12px;
+  color: white;
+margin-top: 20px;
+}
+.featureDes{
+    color: #1F266D;
+    color: white;
+text-align: center;
+font-family: Poppins;
+font-size: 18px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+width: 350px;
+margin: 0;
+}
+.feature1{
+      display: flex;
+    flex-direction: column;
+   
+    justify-content: center;
+    align-items: center;
+}
