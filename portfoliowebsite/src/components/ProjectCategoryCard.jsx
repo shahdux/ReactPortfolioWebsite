@@ -8,11 +8,11 @@ const ProjectCategoryCard = (props) => {
         <>
         
        
-        <div class="cardone">
+        <div className="cardone">
             <img src={props.projectcategoryimg} alt="projectimg" className='imgwidth' />
-             <div class="forpgdes">
-               <h5 class="projectCategoryTitle">{props.projecttitle}</h5>
-               <p class="nameDes">{props.projectdescription}</p>
+             <div className="forpgdes">
+               <h5 className="projectCategoryTitle">{props.projecttitle}</h5>
+               <p className="nameDes">{props.projectdescription}</p>
                  <TextButton textbuttontitle="View project" textColor="#1F266D"
         iconimage={bluearrow}
         />

@@ -18,7 +18,7 @@ const Header = () => {
 
       
     
- <div class="forbuttons">
+ <div className="forbuttons">
            <Strokebutton iconimg={downloadicon}
            buttonTextTitle="Download CV"
            />
@@ -29,7 +29,7 @@ const Header = () => {
            />
            
         </div>
-    <img src={displayCards} alt="" class="hero2" />
+    <img src={displayCards} alt="" className="hero2" />
     
 
        </div>

@@ -19,10 +19,10 @@ import NavLinkTitle from './NavLinkTitle';
 const Footer = () => {
     return ( 
         <>
-        <footer class="footer">
-    <div class="section1">
-        <h4 class="contactText">Contact Me</h4>
-        <div class="forIcons">
+        <footer className="footer">
+    <div className="section1">
+        <h4 className="contactText">Contact Me</h4>
+        <div className="forIcons">
             <Footerlink footericon={locimg}
             footerLink="Cairo, Egypt"/>
               <Footerlink footericon={numbericon}
@@ -34,9 +34,9 @@ const Footer = () => {
            
         </div>
     </div>
-    <div class="section1c">
+    <div className="section1c">
       <img src={footerlogo} alt="footerlogo" />
-        <div class="forIcons2">
+        <div className="forIcons2">
          <NavLinkTitle NavlinkTitle="Home"/>
                   <NavLinkTitle NavlinkTitle="| Works"/>
          <NavLinkTitle NavlinkTitle="| About Us"/>
@@ -45,10 +45,10 @@ const Footer = () => {
            
         </div>
     </div>
-    <div class="section1">
-        <h4 class="contactText">Get in Touch</h4>
-        <div class="forIcons">
-            <p class="gitdes">Got a question, some feedback, or just want to connect? Don’t hesitate to reach out! I’d love to hear from you.</p>
+    <div className="section1">
+        <h4 className="contactText">Get in Touch</h4>
+        <div className="forIcons">
+            <p className="gitdes">Got a question, some feedback, or just want to connect? Don’t hesitate to reach out! I’d love to hear from you.</p>
               <Footerlink footericon={behance}
             footerLink="shahdmohammad3"/>
              <Footerlink footericon={linkedin}

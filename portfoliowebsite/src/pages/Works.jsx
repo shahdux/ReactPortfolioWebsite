@@ -9,8 +9,8 @@ const Works = () => {
         <>
         <Navbar/>
         
-              <img class="heads" src={imgtitle}/>
-              <div class="topics">
+              <img className="heads" src={imgtitle}/>
+              <div className="topics">
              <SmallMenuTab menutabtitle="UX/UI"/>
              <SmallMenuTab menutabtitle="Graphic Design"/>
               <SmallMenuTab menutabtitle="Motion Graphics"/>
@@ -23,10 +23,10 @@ const Works = () => {
 
               </div>
 
-               <img src={gradientbg} alt="gradientbg" class="workbg"/>
-    <div class="forallcards">
+               <img src={gradientbg} alt="gradientbg" className="workbg"/>
+    {/* <div className="forallcards">
 
-    </div>
+    </div> */}
              
 
         

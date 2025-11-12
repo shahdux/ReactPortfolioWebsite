@@ -1,4 +1,3 @@
-// import React, { Component } from 'react';
 import React, { useEffect, useRef } from "react";
 import "./Home.css";
 import Navbar from '../components/Navbar';
@@ -28,7 +27,6 @@ import SubscriptionSection from '../components/SubscriptionSection';
 import Footer from '../components/Footer';
 import videobg from "../assets/vd1.mp4";
 
-// import React, { useEffect, useRef } from "react";
 
 
 
@@ -50,8 +48,7 @@ const transformStyles = [
   "rotate(5deg) translate(-150px)",
   "rotate(0deg) translate(-70px)",
   "rotate(-5deg)",
-  // "rotate(5deg) translate(70px)",
-  // "rotate(-5deg) translate(150px)"
+  
 ];
 const scrollRef = useRef(null);
 
@@ -68,7 +65,7 @@ const scrollRef = useRef(null);
         1
       );
 
-      const translateX = scrollProgress * -200; // adjust distance
+      const translateX = scrollProgress * -200; 
       section.querySelector(".categories").style.transform = `translateX(${translateX}vw)`;
     };
 
@@ -81,7 +78,7 @@ const scrollRef = useRef(null);
         <Header/>
 
         <div className='featuredprojectsSection'>
-            <div class="titlewSub">
+            <div className="titlewSub">
 
             <SectionTitle sectiontitlename="Featured Projects"/>
             <SectionSubtitle sectionsubtitlename="Projects that best capture my approach to creating meaningful user experiences."/>
@@ -122,14 +119,12 @@ const scrollRef = useRef(null);
             </div>
 
         </div>
-        <div class="forvideoplacegolder">
-    {/* <img src="images/purpv.svg" alt="" class="imgst"> */}
+        <div className="forvideoplacegolder">
     <video src={videobg} class="imgst2" autoPlay loop></video>
-    {/* <img src={labmocukup} alt="videomockup" class="imgst" /> */}
 </div>
        <div className='horizontal-scroll-section' ref={scrollRef}>
 
-<div class="categories">
+<div className="categories">
 
 <ProjectCategoryCard
 projectcategoryimg={projectimg}
