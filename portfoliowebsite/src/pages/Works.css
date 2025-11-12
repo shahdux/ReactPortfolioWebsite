@@ -7,7 +7,8 @@
     justify-content: center;
     padding-top: 20px;
     padding-bottom: 20px;
-        gap: 140px
+        gap: 140px;
+            margin-bottom: 10px;
    
 }
 .workbg{
@@ -20,4 +21,13 @@
     flex-wrap: wrap;
     justify-content: center;
     gap: 40px;
+}
+.gap5 {
+    margin-top: 50px;
+    padding-bottom: 100px;}
+    .forallcards {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* gap: 38px; */
 }

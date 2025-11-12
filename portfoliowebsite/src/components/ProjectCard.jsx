@@ -7,7 +7,7 @@ const ProjectCard = (props) => {
     return ( 
         <>
          <div className="projectcard1" >
-                                <img className="projectimg" src={props.projectimgbg}/>
+                                <img className="projectimgcont" src={props.projectimgbg}/>
                                 
 
                     <div className="foldwithtexts">
