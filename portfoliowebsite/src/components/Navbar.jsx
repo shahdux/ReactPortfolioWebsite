@@ -6,10 +6,11 @@ import { Link } from 'react-router-dom';
 const Navbar = () => {
     return ( 
         <div className='navbar'>
-            <img src={logo} alt="" className='logo'/>
+           <Link to="/"> 
+            <img src={logo} alt="" className='logo'/></Link> 
               <div className="forlinks">
                 <NavLinkTitle NavlinkTitle="Services"/>
-                <Link to="/works">   <NavLinkTitle NavlinkTitle="Works"/></Link> 
+                <Link to="/works" className="no-underline"><NavLinkTitle NavlinkTitle="Works"/></Link> 
                                 <NavLinkTitle NavlinkTitle="Blog"/>
                 <NavLinkTitle NavlinkTitle="About Us"/>
                 <NavLinkTitle NavlinkTitle="Contact Us"/>

@@ -6,12 +6,15 @@
     align-items: end;
     transition: ease 0.5s;
     position: relative;
+    transition: 0.5 ease;
 }
 .folder{
    position: absolute;
    z-index: 1;
         margin-left: -18px;
       margin-top: -93px;
+          transition: 0.5 ease;
+
 }
 
 .apptitle{
@@ -47,4 +50,13 @@ margin-left: 10px;
 }
 .projectimgcont{
     position: absolute;
+}
+.projectcard1:hover .folder{
+    content: url(../assets/union2.svg);
+}
+.projectcard1:hover .apptitle{
+    color: white;
+}
+.projectcard1:hover .appdes{
+    color: white;
 }
