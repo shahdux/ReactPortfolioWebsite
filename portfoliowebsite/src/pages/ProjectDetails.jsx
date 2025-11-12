@@ -13,6 +13,8 @@ import n3 from "../assets/n3.svg";
 import n4 from "../assets/n4.svg";
 import SectionTitle from '../components/SectionTitle';
 import SectionSubtitle from '../components/SectionSubtitle';
+import SubscriptionSection from '../components/SubscriptionSection';
+import Footer from '../components/Footer';
 
 
 
@@ -82,6 +84,8 @@ featuretitledes="Users can easily book tickets for upcoming events, such as conc
 
 
         </div>
+        <SubscriptionSection/>
+        <Footer/>
 
         </>
      );
