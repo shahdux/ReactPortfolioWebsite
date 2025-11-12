@@ -3,7 +3,7 @@ import "./Strokebutton.css"
 const Strokebutton = (props) => {
     return ( 
         <div className='downloadButton'>
-            <img src={props.iconimg} alt="" />
+            <img src={props.iconimg} alt="" className='iconhovered'/>
             <p className='buttonText'>{props.buttonTextTitle}</p>
             <img src={props.iconimg2} alt="" />
         </div>

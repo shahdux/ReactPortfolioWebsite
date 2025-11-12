@@ -24,3 +24,7 @@ line-height: normal;
   
  color: #2D39B8;
 }
+.downloadButton:hover .iconhovered {
+  
+content: url(../assets/hovericon.svg);
+}

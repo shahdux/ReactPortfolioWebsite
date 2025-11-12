@@ -4,6 +4,10 @@
     gap: 8px;
    
 }
+.textButton:hover .bluehover{
+   content: url(../assets/bluehover.svg);
+   
+}
 .textclass{
 font-family: "Gooper Trial";
 font-size: 20px;

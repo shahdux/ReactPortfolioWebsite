@@ -9,7 +9,7 @@ const TextButton = (props) => {
         // </div>
         <div   className='textButton' style={{color: props.textColor}}>
       <p className='textclass'>{props.textbuttontitle}</p>
-                  <img src={props.iconimage} alt="icon" />
+                  <img src={props.iconimage} alt="icon" className='bluehover'/>
 
         </div>
      );
