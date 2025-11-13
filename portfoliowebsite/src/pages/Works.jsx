@@ -10,7 +10,7 @@ import projectimg2 from "../assets/arwebsite.svg";
 import projectimg3 from "../assets/whattoeat.svg";
 import projectimg4 from "../assets/event.svg";
 import projectimg5 from "../assets/storyweb.svg";
-import projectimg6 from "../assets/esport.svg";
+import projectimg6 from "../assets/artmentoimg.svg";
 import SubscriptionSection from '../components/SubscriptionSection';
 import Footer from '../components/Footer';
 import {Link} from 'react-router-dom'
@@ -67,9 +67,9 @@ const Works = () => {
                   <ProjectCard projectName2="Story Website"
                 projectimgbg={projectimg5}
                 projectDes2="A 3D interactive story-telling website that immerses users....[+]"/>
-                  <ProjectCard projectName2="E-sport Website"
+                  <ProjectCard projectName2="Art Mentor App"
                 projectimgbg={projectimg6}
-                projectDes2="An intuitive event planner app that simplifies organizing....[+]"/>
+                projectDes2="An engaging app that helps designers start with their design...[+]"/>
                 
             </div>
         </div>
