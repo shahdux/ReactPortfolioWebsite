@@ -19,6 +19,14 @@ import CircularText from '../components/CircularText ';
 import arrowdivwhite from "../assets/whitearrowspin.svg";
 import RotatingText from '../components/RotatingText'
 import { useParams } from 'react-router-dom';
+import arimg1 from "../assets/arleftmockup.svg";
+import arimg2 from "../assets/armockupmiddle.svg";
+import arimg3 from "../assets/arrightmockup.svg";
+import food1 from "../assets/food1.svg";
+import food2 from "../assets/food2.svg";
+import food3 from "../assets/food3.svg";
+
+
 
 
 
@@ -49,9 +57,9 @@ const ProjectDetails = () => {
       
    
     description: 'An AR Escape Room game that challenges your mind',
-    image: {mockup3},
-     rightimg: mockup3,
-    leftimg: mockup1,
+    image: arimg2,
+     rightimg: arimg1,
+    leftimg: arimg3,
      featuretitle1: 'Immersive AR Gameplay',
   featuredescription1: 'Players experience puzzles and clues integrated into their real-world environment through augmented reality.',
 
@@ -65,6 +73,25 @@ const ProjectDetails = () => {
   featuredescription4: 'Players can collaborate or compete with friends to solve puzzles and escape within the time limit.',
     
     },
+    p3: {
+  description: 'What to Eat helps users decide what to eat through personalized suggestions based on mood, cravings, and available ingredients.',
+  image: food2,
+  rightimg: food1,
+  leftimg: food3,
+
+  featuretitle1: 'Smart Meal Suggestions',
+  featuredescription1: 'The app recommends meals tailored to users’ preferences',
+
+  featuretitle2: 'Mood-Based Recommendations',
+  featuredescription2: 'Users can select their current mood, and the app will suggest dishes that match their energy and emotions.',
+
+  featuretitle3: 'Interactive Ingredient Scanner',
+  featuredescription3: 'Users can scan ingredients to receive instant recipe ideas and nutritional information.',
+
+  featuretitle4: 'Save & Share Recipes',
+  featuredescription4: 'Users can save their favorite dishes, create custom lists, and share recipes with friends.',
+},
+
   };
   
    const { key } = useParams();

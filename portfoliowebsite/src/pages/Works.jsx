@@ -51,12 +51,18 @@ const Works = () => {
                 projectimgbg={projectimg6}
                 projectDes2="An engaging app that helps designers start with their design thinking such as generate ideas..[+]"/>
                 </Link>
+                          <Link to="/works/p2"  style={{ textDecoration: 'none'}}>
+
                 <ProjectCard projectName2="AR Website"
                 projectimgbg={projectimg2}
                 projectDes2="An engaging AR game website that explores different features of the AR game.....[+]"/>
+                </Link>
+                          <Link to="/works/p3"  style={{ textDecoration: 'none'}}>
+
                  <ProjectCard projectName2="What to eat App"
                 projectimgbg={projectimg3}
                 projectDes2="An intuitive cooking app that helps users avoiding loosing their ingredient when prepping for a meal.....[+]"/>
+                </Link>
                 
             
             </div>
