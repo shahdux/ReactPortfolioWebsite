@@ -35,14 +35,34 @@ const ProjectDetails = () => {
     image: mockup2,
     rightimg: mockup3,
     leftimg: mockup1,
+    featuretitle1:'Moodboard Generator',
+        featuredescription1:'Users can upload images as inspos and then AI will create a mood board based on these images.',
+        featuretitle2:'ART AI ASSISTANCE',
+        featuredescription2:'Users can ask for assistance with their design projects through using the AI assistant.',
+        featuretitle3:'FILE SUMMARIZER',
+        featuredescription3:'Users can upload any files they struggle to understand, and AI will summarize it for them.',
+        featuretitle4:'FEEDACK PROVIDER',
+        featuredescription4:'Users can get feedback on their work with the help of ArtMento.',
+
     },
      p2:{
       
    
-    description: 'An AR escape room experience...',
+    description: 'An AR Escape Room game that challenges your mind',
     image: {mockup3},
      rightimg: mockup3,
     leftimg: mockup1,
+     featuretitle1: 'Immersive AR Gameplay',
+  featuredescription1: 'Players experience puzzles and clues integrated into their real-world environment through augmented reality.',
+
+  featuretitle2: 'Story-Driven Challenges',
+  featuredescription2: 'Each level unfolds a unique narrative that deepens the mystery and keeps players engaged as they progress.',
+
+  featuretitle3: 'Interactive Objects',
+  featuredescription3: 'Users can interact with virtual items, decode messages, and unlock hidden clues by exploring their surroundings.',
+
+  featuretitle4: 'Multiplayer Mode',
+  featuredescription4: 'Players can collaborate or compete with friends to solve puzzles and escape within the time limit.',
     
     },
   };
@@ -105,13 +125,13 @@ exit={{ y: "100%", opacity: 0 }}
 <div class="firstcont">
 <FeaturesCard 
 numberimg={n1}
-featuretitlename="Moodboard Generator"
-featuretitledes="Users can easily book tickets for upcoming events, such as concerts, through the app for a experience."
+featuretitlename={details.featuretitle1}
+featuretitledes={details.featuredescription1}
 />
 <FeaturesCard 
 numberimg={n2}
-featuretitlename="FILE SUMMARIZER"
-featuretitledes="Users can easily book tickets for upcoming events, such as concerts, through the app for a experience."
+featuretitlename={details.featuretitle2}
+featuretitledes={details.featuredescription2}
 />
 
   </div>
@@ -119,13 +139,13 @@ featuretitledes="Users can easily book tickets for upcoming events, such as conc
   <div class="firstcont">
 <FeaturesCard 
 numberimg={n3}
-featuretitlename="ART AI ASSISTANCE"
-featuretitledes="Users can easily book tickets for upcoming events, such as concerts, through the app for a experience."
+featuretitlename={details.featuretitle3}
+featuretitledes={details.featuredescription3}
 />
 <FeaturesCard 
 numberimg={n4}
-featuretitlename="FEEDACK PROVIDER"
-featuretitledes="Users can easily book tickets for upcoming events, such as concerts, through the app for a experience."
+featuretitlename={details.featuretitle4}
+featuretitledes={details.featuredescription4}
 />
 
   </div>

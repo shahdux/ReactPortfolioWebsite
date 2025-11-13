@@ -46,9 +46,11 @@ const Works = () => {
 
         <div className='forallcards'>
             <div className='textwcards'>
-                <ProjectCard projectName2="Giza Zoo Website"
-                projectimgbg={projectimg}
-                projectDes2="A rebranding of the popular Gizo Zoo in Egypt, showcasing the innovation and newest updates....[+]"/>
+          <Link to="/works/p1"  style={{ textDecoration: 'none'}}>
+                  <ProjectCard projectName2="Art Mentor App"
+                projectimgbg={projectimg6}
+                projectDes2="An engaging app that helps designers start with their design thinking such as generate ideas..[+]"/>
+                </Link>
                 <ProjectCard projectName2="AR Website"
                 projectimgbg={projectimg2}
                 projectDes2="An engaging AR game website that explores different features of the AR game.....[+]"/>
@@ -59,18 +61,17 @@ const Works = () => {
             
             </div>
             <div className='textwcards gap5'>
-              <Link to="/works/p1"  style={{ textDecoration: 'none'}}>
+                    <ProjectCard projectName2="Giza Zoo Website"
+                projectimgbg={projectimg}
+                projectDes2="A rebranding of the popular Gizo Zoo in Egypt, showcasing the....[+]"/>
+              
+                
                  <ProjectCard projectName2="Event Planner App"
                 projectimgbg={projectimg4}
                 projectDes2="An intuitive event planner app that simplifies organizing and joining e.....[+]"/>
-              </Link>
                   <ProjectCard projectName2="Story Website"
                 projectimgbg={projectimg5}
                 projectDes2="A 3D interactive story-telling website that immerses users....[+]"/>
-                  <ProjectCard projectName2="Art Mentor App"
-                projectimgbg={projectimg6}
-                projectDes2="An engaging app that helps designers start with their design...[+]"/>
-                
             </div>
         </div>
         <SubscriptionSection/>
