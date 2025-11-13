@@ -13,6 +13,7 @@ import projectimg5 from "../assets/storyweb.svg";
 import projectimg6 from "../assets/esport.svg";
 import SubscriptionSection from '../components/SubscriptionSection';
 import Footer from '../components/Footer';
+import {Link} from 'react-router-dom'
 
 
 
@@ -58,9 +59,11 @@ const Works = () => {
             
             </div>
             <div className='textwcards gap5'>
+              <Link to="/works/p1"  style={{ textDecoration: 'none'}}>
                  <ProjectCard projectName2="Event Planner App"
                 projectimgbg={projectimg4}
                 projectDes2="An intuitive event planner app that simplifies organizing and joining e.....[+]"/>
+              </Link>
                   <ProjectCard projectName2="Story Website"
                 projectimgbg={projectimg5}
                 projectDes2="A 3D interactive story-telling website that immerses users....[+]"/>

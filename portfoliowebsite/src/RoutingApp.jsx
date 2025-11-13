@@ -9,7 +9,8 @@ const RoutingApp = () => {
         <Routes>
   <Route path='/' element={<Home />} />
     <Route path='/works' element={<Works />} />
-     <Route path='/projectdetails' element={<ProjectDetails />} />
+     {/* <Route path='/projectdetails' element={<ProjectDetails />} /> */}
+      <Route path='/works/:key' element={<ProjectDetails />} /> 
 
         </Routes>
         

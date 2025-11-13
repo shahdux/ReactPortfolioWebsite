@@ -18,13 +18,40 @@ import Footer from '../components/Footer';
 import CircularText from '../components/CircularText ';
 import arrowdivwhite from "../assets/whitearrowspin.svg";
 import RotatingText from '../components/RotatingText'
+import { useParams } from 'react-router-dom';
 
 
 
 
 
 const ProjectDetails = () => {
+
+
+  let works ={
+    p1:{
+       
+    
+    description: 'ArtMento helps you with any design-related challenges',
+    image: mockup2,
+    rightimg: mockup3,
+    leftimg: mockup1,
+    },
+     p2:{
+      
+   
+    description: 'An AR escape room experience...',
+    image: {mockup3},
+     rightimg: mockup3,
+    leftimg: mockup1,
+    
+    },
+  };
+  
+   const { key } = useParams();
+  const details = works[key];
+
     return ( 
+
         <>
         <Navbar/>
         <div className='mockupHolder22'>
@@ -47,14 +74,14 @@ exit={{ y: "100%", opacity: 0 }}
 />
 
 
-<p className="mockupdes">ArtMento helps you with any design-related challenges </p>
+<p className="mockupdes">{details.description}</p>
 
     </div>
      <div className="for3mockups">
-     <img src={mockup1} alt="" className="widthimg"/>
+     <img src={details.leftimg} alt="" className="widthimg"/>
        <div className="spacer"></div>
-     <img src={mockup2} alt="" className="fixedimg"/>
-     <img src={mockup3} alt="" className="widthimg"/>
+     <img src={details.image} alt="" className="fixedimg"/>
+     <img src={details.rightimg} alt="" className="widthimg"/>
     </div>
         </div>
         <img src={secgradient} alt="" className="gradientdetails"/>
