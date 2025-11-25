@@ -130,3 +130,10 @@ font-style: normal;
 font-weight: 700;
 line-height: normal
 }
+.faqSection{
+    display: flex;
+    flex-direction: column;
+}
+.alignstart{
+    align-items: start;
+}
