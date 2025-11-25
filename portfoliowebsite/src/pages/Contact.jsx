@@ -9,6 +9,8 @@ import linkedin from "../assets/link.svg";
 import numbericon from "../assets/phone.svg";
 import SectionTitle from '../components/SectionTitle';
 import FAQs from '../components/FAQs';
+import SubscriptionSection from '../components/SubscriptionSection';
+import Footer from '../components/Footer';
 
 const Contact = () => {
     return ( 
@@ -63,7 +65,7 @@ const Contact = () => {
     </div>
 </div>
 </div>
-<div className='imagewdiv'>
+<div className='imagewdiv padding200'>
     <SectionTitle  sectiontitlename="Frequently Asked Questions"/>
                 <div className='forvalueCards alignstart'>
                    <FAQs question="How do you start your design process?"
@@ -81,6 +83,8 @@ A simple landing page may take a few days, while a full app design with research
 
 
 </div>
+<SubscriptionSection/>
+<Footer/>
         
         </>
      );
