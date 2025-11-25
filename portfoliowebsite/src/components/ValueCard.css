@@ -1,0 +1,35 @@
+.valueCard{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 302px;
+height: 275px;
+    background-image: url(../assets/valuebg.svg);
+}
+.valueTitle{
+    color: #1F266D;
+text-align: center;
+font-family: "Gooper Trial";
+font-size: 24px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+margin: 0;
+width: 263px;
+
+}
+.valuedescription{
+    color: #1F266D;
+text-align: center;
+font-family: Poppins;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+width: 263px;
+}
+.numberimg{
+    margin-top: -50px;
+    margin-bottom: 20px;
+}

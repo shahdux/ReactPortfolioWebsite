@@ -4,6 +4,9 @@ import Navbar from '../components/Navbar';
 import SectionTitle from './../components/SectionTitle';
 import arrowdecor from '../assets/curvedecor.svg';
 import aboutimages from '../assets/aboutimg.png';
+import ValueCard from '../components/ValueCard';
+import number1 from '../assets/one.svg';
+
 
 const About = () => {
     return ( 
@@ -20,7 +23,19 @@ const About = () => {
            
             
         </div>
+<div className='imagewdiv'>
+            <SectionTitle sectiontitlename="Core Values"/>
+            <div className='forvalueCards'>
+                <ValueCard
+                numberimg={number1}
+                 valuetitle="Emapthy-Driven Design"
+                valuedes="Understanding the needs, emotions, and challenges of users to create a more meaningful and relevant experience."/>
 
+            </div>
+
+
+
+</div>
         
         
         </>
