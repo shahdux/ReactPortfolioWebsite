@@ -6,6 +6,7 @@
     width: 302px;
 height: 275px;
     background-image: url(../assets/valuebg.svg);
+        margin-bottom: 30px;
 }
 .valueTitle{
     color: #1F266D;

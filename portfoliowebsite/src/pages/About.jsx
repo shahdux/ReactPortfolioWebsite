@@ -6,6 +6,12 @@ import arrowdecor from '../assets/curvedecor.svg';
 import aboutimages from '../assets/aboutimg.png';
 import ValueCard from '../components/ValueCard';
 import number1 from '../assets/one.svg';
+import number2 from '../assets/two.svg';
+import number3 from '../assets/thre.svg';
+import number4 from '../assets/four.svg';
+import number5 from '../assets/five.svg';
+import number6 from '../assets/six.svg';
+
 
 
 const About = () => {
@@ -30,6 +36,27 @@ const About = () => {
                 numberimg={number1}
                  valuetitle="Emapthy-Driven Design"
                 valuedes="Understanding the needs, emotions, and challenges of users to create a more meaningful and relevant experience."/>
+                 <ValueCard
+                numberimg={number2}
+                 valuetitle="Striving for Excellence"
+                valuedes="Continuously push boundaries to deliver high-quality results, fostering innovation and growth in every project."/>
+ <ValueCard
+                numberimg={number3}
+                 valuetitle="Fostering Creativity"
+                valuedes="Cultivate an inspiring environment where individuals feel encouraged to explore new ideas and take creative risks."/>
+ <ValueCard
+                numberimg={number4}
+                 valuetitle="Empowering Learning"
+                valuedes="Provide accessible guidance to help users learn at their own pace, boosting confidence and mastery over time."/>
+ <ValueCard
+                numberimg={number5}
+                 valuetitle="Inclusion and Accessibility"
+                valuedes="Design for inclusivity, ensuring that all users, regardless of ability, can engage fully with the product or service."/>
+ <ValueCard
+                numberimg={number6}
+                 valuetitle="Transparent Communication"
+                valuedes="Foster open, honest, and clear dialogue to build trust and ensure all users are aligned."/>
+
 
             </div>
 
