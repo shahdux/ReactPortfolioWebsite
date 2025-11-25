@@ -9,13 +9,14 @@ const Navbar = () => {
            <Link to="/"> 
             <img src={logo} alt="" className='logo'/></Link> 
               <div className="forlinks">
-                <NavLinkTitle NavlinkTitle="Services"/>
                 <Link to="/works" className="no-underline"><NavLinkTitle NavlinkTitle="Works"/></Link> 
                                 <NavLinkTitle NavlinkTitle="Blog"/>
                                 <Link to="/about" className="no-underline">
                 <NavLinkTitle NavlinkTitle="About Us"/>
                                 </Link>
-                <NavLinkTitle NavlinkTitle="Contact Us"/>
+                                                                <Link to="/contact" className="no-underline">
+
+                <NavLinkTitle NavlinkTitle="Contact Us"/></Link>
 
        
         
