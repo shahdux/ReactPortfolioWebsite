@@ -11,6 +11,11 @@ import number3 from '../assets/thre.svg';
 import number4 from '../assets/four.svg';
 import number5 from '../assets/five.svg';
 import number6 from '../assets/six.svg';
+import software1 from '../assets/figma.svg';
+import software2 from '../assets/ai.svg';
+import software3 from '../assets/ps.svg';
+import software4 from '../assets/vs.svg';
+
 
 
 
@@ -63,7 +68,21 @@ const About = () => {
 
 
 </div>
-        
+<div className='elevatediv'>
+    <p className='elevatetext'>I Can help elevate your work today!</p>
+  
+</div>
+        <div className='imagewdiv'>
+               <SectionTitle sectiontitlename="Tools I use"/>
+               <div className='forvalueCards'>
+                <img src={software1} alt="figma icon" />
+                <img src={software3} alt="illustrater icon" />
+                                <img src={software2} alt="photoshop icon" />
+                <img src={software4} alt="vs code icon" />
+
+               </div>
+        </div>
+
         
         </>
      );
