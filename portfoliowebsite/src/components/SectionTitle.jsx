@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import "./SectionTitle.css"
 const SectionTitle = (props) => {
     return ( 
-        <p className='sectionTitle'  style={{ color: props.color2 }}>{props.sectiontitlename}</p>
+        <h1 className='sectionTitle'  style={{ color: props.color2 }}>{props.sectiontitlename}</h1>
      );
 }
  
