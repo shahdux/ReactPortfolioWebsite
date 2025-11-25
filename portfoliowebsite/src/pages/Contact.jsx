@@ -7,6 +7,8 @@ import mailicon from "../assets/mail.svg"
 import behance from "../assets/behance.svg";
 import linkedin from "../assets/link.svg";
 import numbericon from "../assets/phone.svg";
+import SectionTitle from '../components/SectionTitle';
+import FAQs from '../components/FAQs';
 
 const Contact = () => {
     return ( 
@@ -61,7 +63,15 @@ const Contact = () => {
     </div>
 </div>
 </div>
+<div className='imagewdiv'>
+    <SectionTitle  sectiontitlename="Frequently Asked Questions"/>
+                <div className='forvalueCards'>
+                   <FAQs question="How do you start your design process?"
+                   answer="I start by identifying what the problem is, next I start to ideate and come up with solutions that would be the most suitable for the specific case. I then start to create wireframes in order to visualize how the design will look like , gather feedback, and start designing the final output. "/>
+                </div>
 
+
+</div>
         
         </>
      );
