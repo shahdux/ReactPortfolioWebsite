@@ -15,6 +15,8 @@ import software1 from '../assets/figma.svg';
 import software2 from '../assets/ai.svg';
 import software3 from '../assets/ps.svg';
 import software4 from '../assets/vs.svg';
+import SubscriptionSection from '../components/SubscriptionSection';
+import Footer from '../components/Footer';
 
 
 
@@ -82,6 +84,9 @@ const About = () => {
 
                </div>
         </div>
+
+        <SubscriptionSection/>
+        <Footer/>
 
         
         </>
