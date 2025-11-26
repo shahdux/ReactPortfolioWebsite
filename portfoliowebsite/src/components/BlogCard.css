@@ -1,0 +1,46 @@
+
+.blogcard{
+    width: 1093px;
+height: 396px;
+border-radius: 38px;
+border: 1px solid rgba(179, 179, 179, 0.18);
+background: #FEF7EC;
+display: flex;
+justify-content: center;
+align-items: center;
+    width: 1043px;
+    height: 306px;
+    justify-content: space-between;
+
+
+}
+.forblogpg{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+.blogTitle{
+    color: #1F266D;
+font-family: "Gooper Trial";
+font-size: 20px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+margin: 0;
+}
+.forblogpg{
+    margin-left: 30px;
+}
+.blogdes{
+    color: #0F133C;
+font-family: Poppins;
+font-size: 18px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+width: 527px;
+margin: 0;
+}
+.w35{
+    width: 35%;
+}

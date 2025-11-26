@@ -10,7 +10,9 @@ const Navbar = () => {
             <img src={logo} alt="" className='logo'/></Link> 
               <div className="forlinks">
                 <Link to="/works" className="no-underline"><NavLinkTitle NavlinkTitle="Works"/></Link> 
+                <Link to="/blogs" className="no-underline">
                                 <NavLinkTitle NavlinkTitle="Blog"/>
+                </Link>
                                 <Link to="/about" className="no-underline">
                 <NavLinkTitle NavlinkTitle="About Us"/>
                                 </Link>

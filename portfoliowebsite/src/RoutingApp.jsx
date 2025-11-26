@@ -5,6 +5,7 @@ import Works from './pages/Works';
 import ProjectDetails from './pages/ProjectDetails';
 import About from './pages/About';
 import Contact from './pages/Contact';
+import Blog from './pages/Blog';
 const RoutingApp = () => {
     return ( 
         <BrowserRouter>
@@ -15,6 +16,8 @@ const RoutingApp = () => {
       <Route path='/works/:key' element={<ProjectDetails />} /> 
             <Route path='/about' element={<About />} /> 
                         <Route path='/contact' element={<Contact />} /> 
+                                                <Route path='/blogs' element={<Blog />} /> 
+
 
 
 

@@ -1,0 +1,12 @@
+.bgblurstyle{
+    position: absolute;
+    width: 100%;
+}
+.forallcards2{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    padding: 100px 0px;
+}
