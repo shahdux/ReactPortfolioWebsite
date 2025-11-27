@@ -51,12 +51,13 @@ border: 1px solid #acb5c66b;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 1160px;
-height: 672px;
+    width: 1100px;
+height: 592px;
 border-radius: 20px;
 background: #FAF5F5;
     margin-top: 80px;
     gap: 60px;
+    
 }
 .radientbg{
     position: absolute;

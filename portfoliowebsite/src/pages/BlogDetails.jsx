@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import "./BlogDetails.css"
 import SectionTitle from '../components/SectionTitle';
 import blogcoverimg1 from "../assets/bigblog1.svg"
+import blogcover2 from "../assets/blogcover2.svg"
+
 import Navbar from '../components/Navbar';
 import { useParams } from "react-router-dom";
 
@@ -40,10 +42,37 @@ const BlogDetails = () => {
         },
          blog2:{
            
-        name: 'How I helped mothers manage their cooking ingredients',
-        image: blogcoverimg1,
+           
+        name: 'Top Qualities of a Professional UI Designer in Egypt',
+        image: blogcover2,
+        toctitle: "Table of content",
+  tocNumber1: "Introduction",
+        tocNumber2: "What makes my interfaces as a UI designer unique?",
+        tocNumber3: "FAQ",
+        tocNumber4: "Conclusion",
+        tocNumber5: "Resources",
 
+       
+        intro: "A proffessional UI designer should always have qualities that makes them unique from everyone else. It is important to understand that what makes a UI designer good at their job is not only making an interface look good but also creating a good experience that makes the user connected to the product.",
+
+        features: "Throughout my designs, I always make sure that it has an attractive overall look, but what I really focus on is to make users satisfied with the overall expeerince, so that they use something that is both visually attractive and functional. You can checkout my projects on my website: shahdmohammad.com",
+
+        faqQuestion1: "What are essential UI skills to master?",
+        faqAnswer1: "Some essential UI skills to master include: creativity, in-depth industry insight, aptitude for problem solving, and effective planning abilities.",
+        
+        faqQuestion2: "Are UI designers in Egypt in high demand?",
+        faqAnswer2: "A UI Designer creates visual elements such as buttons, menus, and widgets in order to create an interface such as mobile app, websites ,and more.",
+        
+        faqQuestion3: "What were the design decisions based on?",
+        faqAnswer3: "UI designers in Egypt are high in demand simce technology is advancing day by day, and the ICT sector has greatly expanded, so UI designers are indeed needed in order to create meaningful impacts on businesses.",
+
+        conclusion: "Lastly, Every UI designer has to atleast have any of the previous mentioned skills in order to expand in this field and be able to stand out among others.",
+
+        resources: "https://www.nobledesktop.com/careers/ui-designer/requirements#:~:text=UI%20Designers%20need%20a%20variety,empathy%2C%20and%20problem%2Dsolving."
+
+    
       
+        
         },
         
     
