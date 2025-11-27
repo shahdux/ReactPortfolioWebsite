@@ -37,11 +37,74 @@ const BlogDetails = () => {
     
 <div class="toc">
 <h2  class="toc2">Table of content</h2>
-<h4 onclick="scrollToDiv('introDiv')" class="into">1-Introduction</h4>
-<h4 onclick="scrollToDiv('featuresDiv')" class="into">2-Insights & Features</h4>
+<div className='foralltoc'>
+
+
+<div className='first5'>
+
+    <div className='numberwithcontent'>
+<div className='numbercont2'>
+    <p className='numbertext'>1</p>
+</div>
+<h4 onclick="scrollToDiv('introDiv')" class="into">Introduction</h4>
+    </div>
+    <div className='numberwithcontent'>
+<div className='numbercont2'>
+    <p className='numbertext'>1</p>
+</div>
+<h4 onclick="scrollToDiv('introDiv')" class="into">Introduction</h4>
+    </div><div className='numberwithcontent'>
+<div className='numbercont2'>
+    <p className='numbertext'>1</p>
+</div>
+<h4 onclick="scrollToDiv('introDiv')" class="into">Introduction</h4>
+    </div><div className='numberwithcontent'>
+<div className='numbercont2'>
+    <p className='numbertext'>1</p>
+</div>
+<h4 onclick="scrollToDiv('introDiv')" class="into">Introduction</h4>
+    </div><div className='numberwithcontent'>
+<div className='numbercont2'>
+    <p className='numbertext'>1</p>
+</div>
+<h4 onclick="scrollToDiv('introDiv')" class="into">Introduction</h4>
+    </div>
+</div>
+<div className='first5'>
+
+    <div className='numberwithcontent'>
+<div className='numbercont2'>
+    <p className='numbertext'>1</p>
+</div>
+<h4 onclick="scrollToDiv('introDiv')" class="into">Introduction</h4>
+    </div>
+    <div className='numberwithcontent'>
+<div className='numbercont2'>
+    <p className='numbertext'>1</p>
+</div>
+<h4 onclick="scrollToDiv('introDiv')" class="into">Introduction</h4>
+    </div><div className='numberwithcontent'>
+<div className='numbercont2'>
+    <p className='numbertext'>1</p>
+</div>
+<h4 onclick="scrollToDiv('introDiv')" class="into">Introduction</h4>
+    </div><div className='numberwithcontent'>
+<div className='numbercont2'>
+    <p className='numbertext'>1</p>
+</div>
+<h4 onclick="scrollToDiv('introDiv')" class="into">Introduction</h4>
+    </div><div className='numberwithcontent'>
+<div className='numbercont2'>
+    <p className='numbertext'>1</p>
+</div>
+<h4 onclick="scrollToDiv('introDiv')" class="into">Introduction</h4>
+    </div>
+</div>
+</div>
+{/* <h4 onclick="scrollToDiv('featuresDiv')" class="into">2-Insights & Features</h4>
 <h4 onclick="scrollToDiv('faqDiv')" class="into">3-FAQs</h4>
 <h4 onclick="scrollToDiv('concDiv')" class="into">4-Conclusion</h4>
-<h4 onclick="scrollToDiv('resourcesDiv')" class="into">5-Resources</h4>
+<h4 onclick="scrollToDiv('resourcesDiv')" class="into">5-Resources</h4> */}
 </div>
 <div className='forqada'>
 
@@ -58,7 +121,7 @@ const BlogDetails = () => {
 <div class="styleDIV" id="faqDiv">
     <div className='faqcont'>
 
-    <h2 class="into2">Frequently Asked Questions</h2>
+    <h2 class="into2 style2">Frequently Asked Questions</h2>
     <div className='fqcont'>
 
     <div class="styleDIV">

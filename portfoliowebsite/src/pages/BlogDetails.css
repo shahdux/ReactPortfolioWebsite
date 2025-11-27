@@ -16,6 +16,7 @@ font-weight: 700;
 line-height: normal;
 margin: 0;
 margin-bottom: 12px;
+width: 75%;
 }
 .pgfaq{
     color: #1F266D;
@@ -26,7 +27,14 @@ font-weight: 400;
 line-height: normal;
 width: 1415px;
 margin: 0;
+width: 75%;
 
+}
+.styleDIV{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 .into3{
         color: #1F266D;
@@ -37,11 +45,14 @@ font-weight: 700;
 margin: 0;
 line-height: normal;
 margin-bottom: 8px;
+width: 75%;
+
 }
 .forqada{
     display: flex;
     flex-direction: column;
     gap: 40px;
+    
 }
 .faqcont{
     display: flex;
@@ -66,4 +77,71 @@ font-weight: 700;
 line-height: normal;
 margin: 0;
 margin-bottom: 40px;
+}
+.first5{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+.toc{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+        width: 75%;
+        padding: 40px 0px;
+}
+.foralltoc{
+     display: flex;
+     gap: 100px;
+}
+.numbercont2{
+    display: flex;
+width: 48px;
+height: 47px;
+
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+gap: 10px;
+border-radius: 8px;
+background: #2D39B8;
+transition: 0.3s ease;
+}
+.numbercont2:hover{
+     transform: scale(1.1);
+}
+.numbertext{
+    color: #FAF5F5;
+text-align: center;
+font-family: "Gooper Trial";
+font-size: 24px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+}
+.into{
+    color: #1F266D;
+font-family: "Gooper Trial";
+font-size: 20px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+margin: 0;
+}
+.numberwithcontent{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.toc2{
+    color: #1F266D;
+font-family: "Gooper Trial";
+font-size: 32px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+}
+.style2{
+    margin-left: 215px;
 }
