@@ -18,7 +18,7 @@ const RoutingApp = () => {
             <Route path='/about' element={<About />} /> 
                         <Route path='/contact' element={<Contact />} /> 
                                                 <Route path='/blogs' element={<Blog />} /> 
-                                                                                                <Route path='/blogss' element={<BlogDetails />} /> 
+                                                                                                <Route path='/blogs/:key' element={<BlogDetails />} /> 
 
 
 

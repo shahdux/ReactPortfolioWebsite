@@ -3,40 +3,65 @@ import "./BlogDetails.css"
 import SectionTitle from '../components/SectionTitle';
 import blogcoverimg1 from "../assets/bigblog1.svg"
 import Navbar from '../components/Navbar';
+import { useParams } from "react-router-dom";
+
 const BlogDetails = () => {
-    // let blogs ={
-    //     blog1:{
+    let allblogs ={
+        blog1:{
            
+        name: 'How I helped mothers manage their cooking ingredients',
+        image: blogcoverimg1,
+        toctitle: "Table of content",
+  tocNumber1: "Introduction",
+        tocNumber2: "Insights & Features",
+        tocNumber3: "FAQ",
+        tocNumber4: "Conclusion",
+        tocNumber5: "Resources",
+
+       
+        intro: "Remembering the ingredients at home can sometimes be difficult for most mothers, and it usually causes problems when they decide to cook. This is why I created a mobile app that solves this problem. It was a common struggle that many mothers face, so I wanted to create an app that makes this experience easier.",
+
+        features: "The app contains features that make it easier for mothers to track ingredients. One main feature is a scanner that lets users scan all ingredients they have at home. The app stores these images, tracks the stock, expiration dates, and notifies the user when a product is low. Another feature is an ingredient checklist, helping users remember what they have, and an ingredient alternative generator for missing products.",
+
+        faqQuestion1: "How did you conduct user research?",
+        faqAnswer1: "I started by conducting interviews to understand and analyze common problems users face, mainly targeting mothers. After gathering insights, I analyzed competitors and suggested suitable features.",
         
-    //     description: 'ArtMento helps you with any design-related challenges',
-    //     image: mockup2,
-    //     rightimg: mockup3,
-    //     leftimg: mockup1,
-    //     featuretitle1:'Moodboard Generator',
-    //         featuredescription1:'Users can upload images as inspos and then AI will create a mood board based on these images.',
-    //         featuretitle2:'ART AI ASSISTANCE',
-    //         featuredescription2:'Users can ask for assistance with their design projects through using the AI assistant.',
-    //         featuretitle3:'FILE SUMMARIZER',
-    //         featuredescription3:'Users can upload any files they struggle to understand, and AI will summarize it for them.',
-    //         featuretitle4:'FEEDACK PROVIDER',
-    //         featuredescription4:'Users can get feedback on their work with the help of ArtMento.',
+        faqQuestion2: "Who is the target audience?",
+        faqAnswer2: "This UX/UI design app is mostly targeted at mothers or anyone interested in meal prepping and cooking.",
+        
+        faqQuestion3: "What were the design decisions based on?",
+        faqAnswer3: "I aimed to make the app intuitive to avoid overwhelming the user. Focus was on hierarchy and navigation so users can navigate sections easily without frustration.",
+
+        conclusion: "This UX/UI app has solved common challenges for users who want to plan meals. By keeping track of ingredients, users can cook confidently without frustration. The app improves the overall experience without information overload.",
+
+        resources: "https://digitalpublicservices.gov.wales/ux-ui-and-interaction-design/ways-improve-your-design-decisions"
     
-    //     },
+      
+        },
+         blog2:{
+           
+        name: 'How I helped mothers manage their cooking ingredients',
+        image: blogcoverimg1,
+
+      
+        },
         
     
-    //   };
+      };
+       const { key } = useParams();
+  const detailsblog = allblogs[key];
     return ( 
         <>
 <Navbar/>
         
         <div class="forall">
-    <h1 class="blofTitle">How I helped mothers manage their cooking ingredients</h1>
-        <img src={blogcoverimg1} alt="blogimgcover" />
+    <h1 class="blofTitle">{detailsblog.name}</h1>
+        <img src={detailsblog.image} alt="blogimgcover" />
 
 
     
 <div class="toc">
-<h2  class="toc2">Table of content</h2>
+<h2  class="toc2">{detailsblog.toctitle}</h2>
 <div className='foralltoc'>
 
 
@@ -46,60 +71,60 @@ const BlogDetails = () => {
 <div className='numbercont2'>
     <p className='numbertext'>1</p>
 </div>
-<h4 onclick="scrollToDiv('introDiv')" class="into">Introduction</h4>
+<h4 onclick="scrollToDiv('introDiv')" class="into">{detailsblog.tocNumber1}</h4>
     </div>
     <div className='numberwithcontent'>
 <div className='numbercont2'>
     <p className='numbertext'>1</p>
 </div>
-<h4 onclick="scrollToDiv('introDiv')" class="into">Introduction</h4>
+<h4 onclick="scrollToDiv('introDiv')" class="into">{detailsblog.tocNumber2}</h4>
     </div><div className='numberwithcontent'>
 <div className='numbercont2'>
     <p className='numbertext'>1</p>
 </div>
-<h4 onclick="scrollToDiv('introDiv')" class="into">Introduction</h4>
+<h4 onclick="scrollToDiv('introDiv')" class="into">{detailsblog.tocNumber3}</h4>
     </div><div className='numberwithcontent'>
 <div className='numbercont2'>
     <p className='numbertext'>1</p>
 </div>
-<h4 onclick="scrollToDiv('introDiv')" class="into">Introduction</h4>
+<h4 onclick="scrollToDiv('introDiv')" class="into">{detailsblog.tocNumber4}</h4>
     </div><div className='numberwithcontent'>
 <div className='numbercont2'>
     <p className='numbertext'>1</p>
 </div>
-<h4 onclick="scrollToDiv('introDiv')" class="into">Introduction</h4>
+<h4 onclick="scrollToDiv('introDiv')" class="into">{detailsblog.tocNumber5}</h4>
     </div>
 </div>
-<div className='first5'>
+{/* <div className='first5'>
 
     <div className='numberwithcontent'>
 <div className='numbercont2'>
     <p className='numbertext'>1</p>
 </div>
-<h4 onclick="scrollToDiv('introDiv')" class="into">Introduction</h4>
+<h4 onclick="scrollToDiv('introDiv')" class="into">{detailsblog.tocNumber5}</h4>
     </div>
     <div className='numberwithcontent'>
 <div className='numbercont2'>
     <p className='numbertext'>1</p>
 </div>
-<h4 onclick="scrollToDiv('introDiv')" class="into">Introduction</h4>
+<h4 onclick="scrollToDiv('introDiv')" class="into">{detailsblog.tocNumber6}</h4>
     </div><div className='numberwithcontent'>
 <div className='numbercont2'>
     <p className='numbertext'>1</p>
 </div>
-<h4 onclick="scrollToDiv('introDiv')" class="into">Introduction</h4>
+<h4 onclick="scrollToDiv('introDiv')" class="into">{detailsblog.toctitle}</h4>
     </div><div className='numberwithcontent'>
 <div className='numbercont2'>
     <p className='numbertext'>1</p>
 </div>
-<h4 onclick="scrollToDiv('introDiv')" class="into">Introduction</h4>
+<h4 onclick="scrollToDiv('introDiv')" class="into">{detailsblog.toctitle}</h4>
     </div><div className='numberwithcontent'>
 <div className='numbercont2'>
     <p className='numbertext'>1</p>
 </div>
-<h4 onclick="scrollToDiv('introDiv')" class="into">Introduction</h4>
+<h4 onclick="scrollToDiv('introDiv')" class="into">{detailsblog.toctitle}</h4>
     </div>
-</div>
+</div> */}
 </div>
 {/* <h4 onclick="scrollToDiv('featuresDiv')" class="into">2-Insights & Features</h4>
 <h4 onclick="scrollToDiv('faqDiv')" class="into">3-FAQs</h4>
@@ -110,32 +135,32 @@ const BlogDetails = () => {
 
 <div class="styleDIV" id="introDiv">
 
-    <h2 class="into2">Introduction</h2>
-    <p class="pgfaq">Remebering the ingredients at home can somethimes be difiicult for most mothers, and it usually causes problems when they decided to cook. This is why I decided to creat a mobile App that solves this problem. It was a common struggle that I saw that alot of mothers face, so I wanted to simply create an app that make this expeerince easier and help those who struggle with keeping track of their ingredients at home.</p>
+    <h2 class="into2">{detailsblog.tocNumber1}</h2>
+    <p class="pgfaq">{detailsblog.intro}</p>
 </div>
 <div class="styleDIV" id="featuresDiv">
     
-    <h2 class="into2">Insights & Features</h2>
-    <p class="pgfaq">The app containes features that makes it easier for mothers who cook to track their ingredients at home. One of the main features is a scanner that enavles users ti scan all imngrediensrt they have at home. By doing so, the app stores these images and adds it in the app, tracking the amount of stock, expiration date, and notifies the user when the product is about to be out of stock. Another UX feature I included in my design is a an ingredient checklist, which appears after the user selects a speific food. I implemented this featyred based in ux research and makijgn interviews; as a result, majority of those who cook usually forget if they have a specific product available when they decide to cook a meal. By creating this feature, user will always have a checklist when cooking a meal to make sure all the ingreidnet are available. Moreover, another UX feature I added was an ingredient alternative generater that generate an alternative in case there is a missing product. The app also allows the user to choose between two options, either to use this alternative, or users can reorder the missing product through the app. </p>
+    <h2 class="into2">{detailsblog.tocNumber2}</h2>
+    <p class="pgfaq">{detailsblog.features}</p>
 </div>
 <div class="styleDIV" id="faqDiv">
     <div className='faqcont'>
 
-    <h2 class="into2 style2">Frequently Asked Questions</h2>
+    <h2 class="into2 style2">{detailsblog.tocNumber3}</h2>
     <div className='fqcont'>
 
     <div class="styleDIV">
-        <h3 class="into3">How did you conduct user research?</h3>
-        <p class="pgfaq">I started by conducting interviews to understand and analyze what common problems users face, and I was mostly targetting mothers as they usually have the most experience in this area. After I gathered my insights, I started to search more on the topics, analyze my competitors, and suggest features that would best be suitable for my targeted users.</p>
+        <h3 class="into3">{detailsblog.faqQuestion1}</h3>
+        <p class="pgfaq">{detailsblog.faqAnswer1}</p>
     </div>
     <div class="styleDIV">
-        <h3 class="into3">Who is the target Audience?</h3>
-        <p class="pgfaq">This UX/UI Design App is mostly targeted to mothers or anyone who's interested in meal prepping and cooking.</p>
+        <h3 class="into3">{detailsblog.faqQuestion2}</h3>
+        <p class="pgfaq">{detailsblog.faqAnswer2}</p>
         
     </div>
     <div class="styleDIV">
-        <h3 class="into3">What was the design decisions based on?</h3>
-        <p class="pgfaq">I wanted to make the app as intuiative as possiple to avoid overwhelming the user with too much information. To achieve this, I made it as simple as possible, anbd foccussed on the hierarchy and navigation so users are able to navigate through the different app sections easily and without any frustration. </p>
+        <h3 class="into3">{detailsblog.faqQuestion3}</h3>
+        <p class="pgfaq">{detailsblog.faqAnswer3}</p>
     </div>
     </div>
     </div>
@@ -145,14 +170,14 @@ const BlogDetails = () => {
 </div>
 <div class="styleDIV"  id="concDiv">
     
-    <h2 class="into2">Conclusion</h2>
-    <p class="pgfaq">Lastly, this UX/UI App has solved common challenges that users face as they want to plan their meals. By keeping track of their ingredients, users will be able to confidintely cook a meal without feeling frustrated or forgetting certain ingredients. This app aims to create an overall better expeerince without overwhelming the user with information overload.</p>
+    <h2 class="into2">{detailsblog.tocNumber4}</h2>
+    <p class="pgfaq">{detailsblog.conclusion}</p>
 </div>
 
 <div class="styleDIV"  id="resourcesDiv">
     
-    <h2 class="into2">Resources</h2>
-    <p class="pgfaq">https://digitalpublicservices.gov.wales/ux-ui-and-interaction-design/ways-improve-your-design-decisions</p>
+    <h2 class="into2">{detailsblog.tocNumber5}</h2>
+    <p class="pgfaq">{detailsblog.resources}</p>
 </div>
 </div>
 
