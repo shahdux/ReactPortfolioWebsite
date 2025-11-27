@@ -11,6 +11,8 @@ align-items: center;
     width: 1043px;
     height: 306px;
     justify-content: space-between;
+box-shadow: 0 4px 17px 0 rgba(175, 161, 142, 0.20);
+
 
 
 }
