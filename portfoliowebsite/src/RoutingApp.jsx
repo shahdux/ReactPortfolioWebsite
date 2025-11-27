@@ -6,6 +6,7 @@ import ProjectDetails from './pages/ProjectDetails';
 import About from './pages/About';
 import Contact from './pages/Contact';
 import Blog from './pages/Blog';
+import BlogDetails from './pages/BlogDetails';
 const RoutingApp = () => {
     return ( 
         <BrowserRouter>
@@ -17,6 +18,8 @@ const RoutingApp = () => {
             <Route path='/about' element={<About />} /> 
                         <Route path='/contact' element={<Contact />} /> 
                                                 <Route path='/blogs' element={<Blog />} /> 
+                                                                                                <Route path='/blogss' element={<BlogDetails />} /> 
+
 
 
 
