@@ -12,10 +12,15 @@ align-items: center;
     height: 306px;
     justify-content: space-between;
 box-shadow: 0 4px 17px 0 rgba(175, 161, 142, 0.20);
+transition: 0.5s ease;
 
 
 
 }
+.blogcard:hover{
+    background: #1F266D;
+}
+
 .forblogpg{
     display: flex;
     flex-direction: column;
@@ -30,6 +35,9 @@ font-weight: 700;
 line-height: normal;
 margin: 0;
 }
+.blogcard:hover .blogTitle {
+  color: white;
+}
 .forblogpg{
     margin-left: 30px;
 }
@@ -43,6 +51,12 @@ line-height: normal;
 width: 527px;
 margin: 0;
 }
+.blogcard:hover .blogdes {
+  color: white;
+}
 .w35{
     width: 35%;
+}
+.blogcard:hover .viewMoreButton2 {
+  color: white !important;
 }

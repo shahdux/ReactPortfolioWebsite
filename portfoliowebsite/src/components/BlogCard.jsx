@@ -12,6 +12,7 @@ const BlogCard = (props) => {
                            <p class="blogTitle">{props.blogtitle}</p>
                            <p class="blogdes">{props.blogdes}</p>
                             <TextButton 
+                            className="viewMoreButton2"
                             textbuttontitle="View More"
                             textColor="#2D39B8"
                             iconimage={bluearrow}/>
