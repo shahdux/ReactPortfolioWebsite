@@ -11,7 +11,7 @@ const FeaturedCard = (props) => {
     return ( 
         <div className="project1">
             <img src={props.projectbgimg} alt="domtybg" className='projectBg'/>
-            <img src={props.projectimg} alt="domtyimg" />
+            <img src={props.projectimg} alt="domtyimg" className='imgwidthmocup' />
         <div className="projectDesDiv">
             <h4 className="projectTitle">{props.projectTitlename}</h4>
             <p className="projectDescription">{props.projectDescription}</p>

@@ -12,6 +12,7 @@ box-shadow: 0 4px 19px 0 rgba(200, 185, 185, 0.20);
     background-size: cover;
     position: sticky;
         top: 130px;
+                overflow: hidden;
         
 }
 .projectTitle{
@@ -38,7 +39,51 @@ box-shadow: 0 4px 19px 0 rgba(200, 185, 185, 0.20);
     position: absolute;
     z-index: -1;
     width: 100%;
+    width: 1530px
 }
 .textdecnone{
     text-decoration: none;
+}
+
+@media (max-width: 1400px) {
+
+.projectTitle{
+    font-size: 24px;
+}
+.imgwidthmocup{
+    width: 50%;
+}
+.project1{
+    /* width: 90%;
+    height: 488px; */
+            width: 70%;
+        height: auto;
+        flex-wrap: wrap;
+        padding: 50px 0px;
+}
+
+
+
+}
+
+
+
+@media (max-width: 1400px) {
+    .projectDesDiv {
+    width: 85%;
+}
+.projectDescription{
+    width: auto;
+}
+}
+@media (max-width: 600px){
+
+    .project1 {
+        width: 90%;
+        height: 70vh;
+
+}
+.imgwidthmocup{
+    width: 80%;
+}
 }
