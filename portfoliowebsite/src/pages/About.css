@@ -57,3 +57,29 @@ text-transform: uppercase;
 width: 463.914px
 
 }
+
+@media (max-width: 1400px) {
+  .imgwidth22{
+        margin-top: -15%;
+    }
+        .aboutBg{
+            width: 80%;
+        }
+        .elevatediv{
+               height: 65vh;
+        }
+}
+@media (max-width: 600px) {
+     .aboutBg{
+            font-size: 16px;
+        }
+        .elevatetext{
+                font-size: 32px;
+        }
+        .elevatediv{
+                height: 50vh;
+                          
+
+        }
+     
+}
