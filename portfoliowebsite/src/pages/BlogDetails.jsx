@@ -6,6 +6,8 @@ import blogcover2 from "../assets/blogcover2.svg"
 
 import Navbar from '../components/Navbar';
 import { useParams } from "react-router-dom";
+import SubscriptionSection from '../components/SubscriptionSection';
+import Footer from '../components/Footer';
 
 const BlogDetails = () => {
     let allblogs ={
@@ -85,7 +87,7 @@ const BlogDetails = () => {
         
         <div class="forall">
     <h1 class="blofTitle">{detailsblog.name}</h1>
-        <img src={detailsblog.image} alt="blogimgcover" />
+        <img src={detailsblog.image} alt="blogimgcover" className='blogimgwidth'/>
 
 
     
@@ -211,6 +213,8 @@ const BlogDetails = () => {
 </div>
 
 </div>
+<SubscriptionSection/>
+<Footer/>
         </>
      );
 }

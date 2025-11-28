@@ -77,6 +77,7 @@ font-weight: 700;
 line-height: normal;
 margin: 0;
 margin-bottom: 40px;
+text-align: center;
 }
 .first5{
     display: flex;
@@ -144,4 +145,44 @@ line-height: normal;
 }
 .style2{
     margin-left: 215px;
+}
+
+
+
+
+@media (max-width: 1400px){
+    .blogimgwidth {
+        width: 75%;
+    }
+    .blofTitle{
+font-size: 28px;
+}
+     .style2 {
+    margin-left: 20%;
+}
+    
+}
+@media (max-width: 600px){
+
+.blofTitle{
+font-size: 24px;
+}
+  .blogimgwidth {
+        width: 85%;
+    }
+    .pgfaq{
+        width: 85%;
+    }
+    .into2{
+        width: 85%;
+    }
+    .style2 {
+    margin-left: 37px;
+}
+.into3{
+      width: 85%;
+}
+.toc{
+      width: 85%;
+}
 }
