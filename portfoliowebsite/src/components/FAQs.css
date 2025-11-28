@@ -51,3 +51,15 @@ box-shadow: 0 4px 12px 0 #EFE7E7;
     line-height: 1.6;
     color: #555;
 }
+@media (max-width: 600px){
+    .firstqanda{
+            padding: 12px 24px;
+    }
+    .qandacont .answer {
+    margin-top: 8px;
+    line-height: 1.6;
+    color: #555;
+    width: 80%;
+    font-size: 16px;
+}
+}
