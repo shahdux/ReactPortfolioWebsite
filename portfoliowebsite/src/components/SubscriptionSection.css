@@ -89,3 +89,15 @@ font-style: normal;
 font-weight: 400;
 line-height: normal;
 }
+@media (max-width: 1400px) {
+.letsDes {
+    width: 77%;}
+  
+    .inputc{
+    width: 274px;
+    }
+}
+
+@media (max-width: 600px) {
+   
+}

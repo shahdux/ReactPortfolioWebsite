@@ -68,5 +68,13 @@ width: 723px;
     content: url(../assets/herossmal.svg);
     /* width: 220%; */
 }
+.forbuttons {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-direction: column;
+            align-items: center;
+}
     
 }
