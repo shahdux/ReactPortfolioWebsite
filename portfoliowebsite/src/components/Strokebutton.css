@@ -28,3 +28,12 @@ line-height: normal;
   
 content: url(../assets/hovericon.svg);
 }
+
+
+@media (max-width: 600px){
+
+
+  .downloadButton{
+    width: 100%;
+  }
+}

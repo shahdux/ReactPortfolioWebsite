@@ -16,3 +16,10 @@
     font-weight: 500;
     line-height: normal;
 }
+@media (max-width: 600px){
+
+
+    .diffwidth{
+    width: 100%;
+    }
+}

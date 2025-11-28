@@ -94,10 +94,20 @@ line-height: normal;
     width: 77%;}
   
     .inputc{
-    width: 274px;
+           width: 344px;
     }
 }
 
+
 @media (max-width: 600px) {
-   
+   .for2buttons{
+    flex-direction: column;
+   }
+   .letsTitle{
+    text-align: center;
+    font-size: 32px;
+   }
+   .letsDes{
+        font-size: 16px;
+   }
 }
