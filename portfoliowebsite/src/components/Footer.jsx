@@ -35,7 +35,7 @@ const Footer = () => {
         </div>
     </div>
     <div className="section1c">
-      <img src={footerlogo} alt="footerlogo" />
+      <img src={footerlogo} alt="footerlogo" className='footerlogos'/>
         <div className="forIcons2">
          <NavLinkTitle NavlinkTitle="Home"/>
                   <NavLinkTitle NavlinkTitle="| Works"/>

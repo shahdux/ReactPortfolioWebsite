@@ -11,3 +11,10 @@ transition: 0.5s ease;
    
        color: #2D39B8;
 }
+@media (max-width: 1400px){
+
+    .navLink{
+        margin: 0;
+            font-size: 18px;
+    }
+}

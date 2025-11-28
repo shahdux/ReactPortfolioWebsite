@@ -57,3 +57,31 @@ margin: 0;
    
     gap: 12px;
 }
+@media (max-width: 1400px){
+
+  .section1{
+        width: 80%;
+  }
+  .section1c{
+ width: 80%;
+         align-items: baseline;
+        
+  }
+  .footer{
+height: auto;
+ padding: 50px 0px;
+     gap: 32px;
+     align-items: center;
+  }
+  .gitdes{
+    width: auto;
+  }
+  .footerlogos {
+    width: 10%;
+}
+}
+@media (max-width: 600px){
+     .footerlogos {
+    width: 15%;
+}
+}
