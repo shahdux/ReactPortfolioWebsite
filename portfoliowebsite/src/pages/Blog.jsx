@@ -27,13 +27,13 @@ const Blog = () => {
       <img class="heads" src={Blogimg} alt='blog title image'/>
             <div class="forallcards2">
                 
-                          <Link to="/blogs/blog1"  style={{ textDecoration: 'none'}}>
+                          <Link to="/blogs/blog1"  style={{ textDecoration: 'none'}} className='df'>
                 
                 <BlogCard blogtitle="How I helped mothers manage their cooking ingredients"
                 blogdes="How a UX UI app helped mothers why struggle with remembering the ingredients when deciding to prep for a meal at home."
                 blogsimg={blogimg1}/>
                 </Link>
-                                          <Link to="/blogs/blog2"  style={{ textDecoration: 'none'}}>
+                                          <Link to="/blogs/blog2"  style={{ textDecoration: 'none'}} className='df df2'>
 
                    <BlogCard blogtitle="Top Qualities of a Professional UI Designer in Egypt"
                 blogdes="There are some important qualities every UI designer in Egypt should have. Plently of UI designers in Egypt have a unique way in producing there work."

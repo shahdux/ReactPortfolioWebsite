@@ -13,3 +13,14 @@
     flex-direction: column;
     gap: 30px;
 }
+
+@media (max-width: 1400px){
+
+    .df{
+        display: flex;
+        flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    }
+}

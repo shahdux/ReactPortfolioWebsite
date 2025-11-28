@@ -60,3 +60,43 @@ margin: 0;
 .blogcard:hover .viewMoreButton2 {
   color: white !important;
 }
+
+
+@media (max-width: 1400px) {
+    .blogcard{
+           width: 80%;
+        gap: 30px;
+        overflow: hidden;
+    }
+    .w35 {
+    width: 50%;
+}
+ .blogdes{
+        width: 90%;
+ }
+}
+@media (max-width: 900px) {
+    .blogcard{
+        flex-direction: column;
+        height: auto;
+        width: 63%;
+    }
+    .forblogpg{
+        order: 2;
+    }
+    .w35 {
+  /* content: url(../assets/blogtab1.svg); */
+          width: 100%;
+}
+ .blogdes{
+        width: 90%;
+ }
+}
+@media (max-width: 600px) {
+    .blogcard{
+      
+        height: auto;
+        width: 80%;
+    }
+  
+}
