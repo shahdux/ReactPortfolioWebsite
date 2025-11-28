@@ -131,9 +131,42 @@ margin: 0;
 .projectTitle {
   
     font-size: 24px;}
+    .featuredprojectsSection{
+padding: 100px 0px;
+        padding-top: 200px;
+    }
+    .forvideoplacegolder {
+    width: 100%;
+    height: 90vh;}
+    .categories {
+    transform: none !important;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+        height: auto;
+    padding: 100px 0px;
+    /* display: grid;
+            grid-template-columns: repeat(2, 1fr); */
+            
+  }
+
+  .horizontal-scroll-section {
+    height: auto; 
+    overflow: visible;
+  }
 
 }
 
 @media (max-width: 600px) {
+    .featuredprojectsSection{
+padding: 100px 0px;
+        padding-top: 110px;
+    }
+    .forvideoplacegolder {
+    width: 100%;
+    height: 60vh;}
+    .categories{
+                padding: 50px 0px;
+    }
     
 }

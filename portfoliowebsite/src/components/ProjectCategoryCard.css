@@ -38,3 +38,17 @@ margin-top: 12px;
 .imgwidth {
     width: 90%;
 }
+@media (max-width: 1400px) {
+  .cardone{
+    width: 80%;
+  }
+  .forpgdes {
+   
+    width: 96%;}
+    .projectCategoryTitle{
+font-size: 20px;
+    }
+    .imgwidth{
+      width: 100%;
+    }
+}
