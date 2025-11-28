@@ -154,7 +154,14 @@ padding: 100px 0px;
     height: auto; 
     overflow: visible;
   }
-
+.testimonialsSection {
+   
+    height: 65vh;
+   
+    justify-content: space-between;
+  
+    padding-bottom: 240px;
+}
 }
 
 @media (max-width: 600px) {
@@ -168,5 +175,20 @@ padding: 100px 0px;
     .categories{
                 padding: 50px 0px;
     }
+    .testimonialsSection{
+        height: auto;
+        padding: 0px 0px 60px 0px;
+        justify-content: center;
+        gap: 24px;
+    }
     
+}
+
+@media (max-width: 800px) {
+    .testimonialsSection{
+        height: auto;
+        padding: 0px 0px 60px 0px;
+        justify-content: center;
+        gap: 24px;
+    }
 }

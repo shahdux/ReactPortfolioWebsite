@@ -36,3 +36,22 @@ box-shadow: 0 4px 24px 0 rgba(206, 192, 192, 0.40);
   height: 100%;
   object-fit: cover;
 }
+@media (max-width: 800px) {
+  .bounceCardsContainer {
+    width: 100% !important;
+    height: auto !important;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    position: relative;
+  }
+
+  .card {
+    position: relative !important;
+    transform: none !important;
+    left: 0 !important;
+    right: 0 !important;
+    width: 70% !important;
+    height: 380px;
+  }
+}
