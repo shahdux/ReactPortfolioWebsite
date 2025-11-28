@@ -21,3 +21,10 @@
 .no-underline {
   text-decoration: none;
 }
+@media (max-width: 600px){
+
+    .forlinks{
+       
+        gap: 20px;
+    }
+}
