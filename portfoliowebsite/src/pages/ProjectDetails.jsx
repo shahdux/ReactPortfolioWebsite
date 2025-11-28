@@ -25,6 +25,7 @@ import arimg3 from "../assets/arrightmockup.svg";
 import food1 from "../assets/food1.svg";
 import food2 from "../assets/food2.svg";
 import food3 from "../assets/food3.svg";
+import { Helmet } from 'react-helmet';
 
 
 
@@ -100,6 +101,12 @@ const ProjectDetails = () => {
     return ( 
 
         <>
+       
+           <Helmet>
+                <title>Art Mentor UX UI App</title>
+                <meta name="description" content="Discover the key features and functionalities of the art mentor app, including AI assistance, moodboard generation, file summarization, and feedback tools." />
+                  <link rel="icon" type="image/png" href="/smalllogo.png" sizes="16x16" />    
+            </Helmet>
         <Navbar/>
         <div className='mockupHolder22'>
 

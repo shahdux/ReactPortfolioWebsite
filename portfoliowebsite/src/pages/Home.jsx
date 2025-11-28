@@ -26,6 +26,7 @@ import BounceCards from '../components/BounceCards'
 import SubscriptionSection from '../components/SubscriptionSection';
 import Footer from '../components/Footer';
 import videobg from "../assets/vd1.mp4";
+import { Helmet } from "react-helmet";
 
 
 
@@ -74,7 +75,17 @@ const scrollRef = useRef(null);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
     return ( 
-        <>
+
+        <><Helmet>
+  <title>Shahd's UX/UI Portfolio</title>
+  <meta 
+    name="description" 
+    content="Discover Shahd's Portfolio featuring UX/UI projects, Graphic design, 3d, AR, and more with focussing on user-centered design." 
+  />
+  <link rel="icon" type="image/png" href="/smalllogo.png" sizes="16x16" />    
+</Helmet>
+             
+
         <Navbar/>
         <Header/>
 

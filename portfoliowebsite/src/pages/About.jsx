@@ -17,6 +17,7 @@ import software3 from '../assets/ps.svg';
 import software4 from '../assets/vs.svg';
 import SubscriptionSection from '../components/SubscriptionSection';
 import Footer from '../components/Footer';
+import { Helmet } from 'react-helmet';
 
 
 
@@ -24,6 +25,11 @@ import Footer from '../components/Footer';
 const About = () => {
     return ( 
         <>
+       
+          <Helmet>
+                <title>About Me | Shahd Mohammad</title>
+                <meta name="description" content="A UX/UI designer passionate about creating meaningful, user-centered digital experiences." />
+            </Helmet>
         <Navbar/>
         <div className='imagewdiv'>
             <img src={arrowdecor} alt="three lines textdecor" className='marginleft'/>

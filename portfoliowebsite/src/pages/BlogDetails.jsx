@@ -8,6 +8,7 @@ import Navbar from '../components/Navbar';
 import { useParams } from "react-router-dom";
 import SubscriptionSection from '../components/SubscriptionSection';
 import Footer from '../components/Footer';
+import { Helmet } from 'react-helmet';
 
 const BlogDetails = () => {
     let allblogs ={
@@ -83,6 +84,12 @@ const BlogDetails = () => {
   const detailsblog = allblogs[key];
     return ( 
         <>
+        
+          <Helmet>
+                <title>Helping Mothers Track Ingredients</title>
+                <meta name="description" content="Discover how I designed a mobile app to help mothers manage their cooking ingredients. Learn about key features like ingredient scanning, stock tracking, checklists, and alternatives to simplify meal planning." />
+                  <link rel="icon" type="image/png" href="/smalllogo.png" sizes="16x16" />    
+            </Helmet>
 <Navbar/>
         
         <div class="forall">

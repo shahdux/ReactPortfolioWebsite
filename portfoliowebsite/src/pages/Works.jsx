@@ -14,13 +14,21 @@ import projectimg6 from "../assets/artmentoimg.svg";
 import SubscriptionSection from '../components/SubscriptionSection';
 import Footer from '../components/Footer';
 import {Link} from 'react-router-dom'
+import { Helmet } from 'react-helmet';
 
 
 
 
 const Works = () => {
     return (
+      
         <>
+        
+            <Helmet>
+                <title>UX/UI & Digital Design Projects</title>
+                <meta name="description" content="Explore Shahd Mohammad's portfolio of UX/UI, Graphic Design, Motion Graphics, Coding, and 3D projects. Discover interactive apps, websites, and creative solutions showcasing design thinking and innovation." />
+                  <link rel="icon" type="image/png" href="/smalllogo.png" sizes="16x16" />    
+            </Helmet>
         <Navbar/>
         
               <img className="heads" src={imgtitle}/>

@@ -11,10 +11,18 @@ import SectionTitle from '../components/SectionTitle';
 import FAQs from '../components/FAQs';
 import SubscriptionSection from '../components/SubscriptionSection';
 import Footer from '../components/Footer';
+import { Helmet } from 'react-helmet';
 
 const Contact = () => {
     return ( 
+        
         <>
+        
+           <Helmet>
+                <title>Contact Me | Shahd Mohammad</title>
+                <meta name="description" content="Get in touch with Shahd Mohammad, UX/UI designer. Reach out for collaborations, inquiries, or to discuss design projects and creative opportunities." />
+                  <link rel="icon" type="image/png" href="/smalllogo.png" sizes="16x16" />    
+            </Helmet>
         <Navbar/>
         <div className="bigcontcont">
 

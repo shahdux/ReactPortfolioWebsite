@@ -19,7 +19,7 @@ const Blog = () => {
         <>
             <Helmet>
                 <title>Blog</title>
-                <meta name="description" content="jhjkhkh" />
+                <meta name="description" content="Explore case studies, design insights, and personal thoughts on UX/UI, creativity, and digital experiences." />
                   <link rel="icon" type="image/png" href="/smalllogo.png" sizes="16x16" />    
             </Helmet>
         
