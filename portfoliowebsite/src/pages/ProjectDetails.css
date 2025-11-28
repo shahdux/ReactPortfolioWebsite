@@ -127,3 +127,48 @@ line-height: normal;
 .custom-class2{
     color: white;
 }
+@media (max-width: 1400px){
+    .mockupHolder22{
+        background: white;
+    }
+    .featuresSection{
+        background: #5962B3;
+                /* background: #9AA5FF; */
+
+        
+    }
+}
+
+@media (max-width: 1000px){
+    .fixedimg{
+        position: relative
+    } 
+    .spacer{
+        display: none;
+    }
+    .spacer2{
+        display: none;
+    }
+    .imgwpg{
+gap: 50px;
+flex-direction: column;
+    }
+    .featuresSection{
+        height: auto;
+        padding: 100px 0px;
+    }
+}
+
+@media (max-width: 600px){
+    .fixedimg{
+        width: 35%;
+    }
+    .widthimg {
+    width: 23%;
+}
+
+
+ }
+
+
+
