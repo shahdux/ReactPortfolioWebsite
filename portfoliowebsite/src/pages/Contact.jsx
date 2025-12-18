@@ -1,4 +1,4 @@
-import React, { Component, useState } from 'react';
+import React, { Component, useEffect, useState } from 'react';
 import "./Contact.css"
 import Navbar from '../components/Navbar';
 import FilledButton from '../components/FilledButton';
@@ -15,12 +15,26 @@ import { Helmet } from 'react-helmet';
 import { supabase } from '../Supabase';
 
 const Contact = () => {
+    
     const [title,setTitle] = useState("");
-        const [Email,setEmail] = useState("");
+    const [Email,setEmail] = useState("");
     const [msg,setMsg] = useState("");
-   async function sendMsg(){
-const res = await supabase.from("contact").insert({"first_name":title,"email":Email,"message":msg});
-  }
+    async function sendMsg(){
+        const res = await supabase.from("contact").insert({"first_name":title,"email":Email,"message":msg});
+    }
+    const [loading, setLoading] = useState(true);
+             const [faqs, setFaqs] = useState("");
+       
+             useEffect(()=>{
+                   async function callGetAPI3(){
+                         const res = await supabase.from("FAQS").select("*");
+                         setFaqs(res.data);
+                         // console.log(res);
+                         setLoading(false);
+                   }
+                   callGetAPI3();
+             },[]);
+             if (loading) return <p>Loading...</p>;
 
     return ( 
         
@@ -81,23 +95,39 @@ const res = await supabase.from("contact").insert({"first_name":title,"email":Em
     </div>
 </div>
 </div>
-<div className='imagewdiv padding200'>
+ {/* <div className='imagewdiv padding200'>
     <SectionTitle  sectiontitlename="Frequently Asked Questions"/>
-                <div className='forvalueCards alignstart'>
-                   <FAQs question="How do you start your design process?"
-                   answer="I start by identifying what the problem is, next I start to ideate and come up with solutions that would be the most suitable for the specific case. I then start to create wireframes in order to visualize how the design will look like , gather feedback, and start designing the final output. "/>
-                                 <FAQs question="Are you open to full-time opportunities??"
-                   answer="Yes Im open to any opportunities that would help me build more connections and create something that has a real impact on people."/>
-                                 <FAQs question="Can you code your designs too?"
-                   answer="Yes, I use HTML and CSS as well as the basics of JavaScript.  "/>              <FAQs question="What tools do you use when designing?"
-                   answer="I mainly use Figma for UI design, prototyping, and design systems.
-For illustrations and icons, I use Adobe Illustrator."/>              <FAQs question="How long does a project usually take?"
-                   answer="It depends on the project size.
-A simple landing page may take a few days, while a full app design with research and prototyping may take a few weeks."/>              <FAQs question="Can you collaborate with developers?"
-                   answer="Of course. I prepare assets, organize components, document interactions, and work closely with developers to ensure smooth handoff and accurate implementation."/>
+{
+           faqs.map((faq)=>{
+             return   <div className='forvalueCards alignstart'>
+                   <FAQs question={faq.question_EN}
+                   answer={faq.answer_EN}/>
+                             
                 </div>
 
 
+
+            })
+          }
+          </div> */}
+         <div className='imagewdiv padding200'>
+  <SectionTitle sectiontitlename="Frequently Asked Questions" />
+
+  <div className='forvalueCards alignstart' style={{ display: 'flex', gap: '20px' }}>
+    {/* Left column */}
+    <div style={{ flex: 1, display: 'flex', flexDirection: 'column', gap: '20px' }}>
+      {faqs.slice(0, 3).map((faq) => (
+        <FAQs key={faq.id} question={faq.question_EN} answer={faq.answer_EN} />
+      ))}
+    </div>
+
+    {/* Right column */}
+    <div style={{ flex: 1, display: 'flex', flexDirection: 'column', gap: '20px' }}>
+      {faqs.slice(3, 6).map((faq) => (
+        <FAQs key={faq.id} question={faq.question_EN} answer={faq.answer_EN} />
+      ))}
+    </div>
+  </div>
 </div>
 <SubscriptionSection/>
 <Footer/>
