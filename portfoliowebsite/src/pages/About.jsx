@@ -26,15 +26,26 @@ import { supabase } from '../Supabase';
 const About = () => {
     const [loading, setLoading] = useState(true);
                const [val, setVal] = useState("");
+                              const [headers, setHeaders] = useState("");
+
          
                useEffect(()=>{
-                     async function callGetAPI9(){
-                           const res = await supabase.from("values").select("*");
-                           setVal(res.data);
-                           // console.log(res);
+                    //  async function callGetAPI9(){
+                    //        const res = await supabase.from("values").select("*");
+                    //        setVal(res.data);
+                    //        // console.log(res);
+                    //     //    setLoading(false); 
+                    //  }
+                    //  callGetAPI9();
+                     async function callGetAPI10(){
+                           const res = await supabase.from("Header").select("*").limit(1)
+                           setHeaders(res.data);
+                           const res2 = await supabase.from("values").select("*");
+                           setVal(res2.data);
+                        //    console.log(res.data);
                            setLoading(false);
                      }
-                     callGetAPI9();
+                     callGetAPI10();
                },[]);
                if (loading) return <p>Loading...</p>;
    
@@ -56,20 +67,20 @@ const About = () => {
       
             
         </div> */}
-             {/* {
+             {
            headers.map((head)=>{
              return     <div className='imagewdiv'>
             <img src={arrowdecor} alt="three lines textdecor" className='marginleft'/>
         <SectionTitle sectiontitlename={head.title}/>
         <p className='aboutBg'>
-            I’m a very passionate UX/UI Designer who creates interfaces that are both visually attractive and user centered. I create designs through mobile Apps, websites, graphics and more. Im always determined to come up with solutions that would best benefit my target users. This dedication helps me go an extra mile in order to achieve best possible UX solutions.
+           {head.description}
         </p>
 <img src={aboutimages} alt="project mockups" className='imgwidth22'/>
       
             
         </div>
             })
-          } */}
+          }
 <div className='imagewdiv'>
             <SectionTitle sectiontitlename="Core Values"/>
              <div className='forvalueCards'>
