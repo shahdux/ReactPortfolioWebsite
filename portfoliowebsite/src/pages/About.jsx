@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component, useEffect, useState } from 'react';
 import "./About.css"
 import Navbar from '../components/Navbar';
 import SectionTitle from './../components/SectionTitle';
@@ -18,11 +18,26 @@ import software4 from '../assets/vs.svg';
 import SubscriptionSection from '../components/SubscriptionSection';
 import Footer from '../components/Footer';
 import { Helmet } from 'react-helmet';
+import { supabase } from '../Supabase';
 
 
 
 
 const About = () => {
+    const [loading, setLoading] = useState(true);
+               const [val, setVal] = useState("");
+         
+               useEffect(()=>{
+                     async function callGetAPI9(){
+                           const res = await supabase.from("values").select("*");
+                           setVal(res.data);
+                           // console.log(res);
+                           setLoading(false);
+                     }
+                     callGetAPI9();
+               },[]);
+               if (loading) return <p>Loading...</p>;
+   
     return ( 
         <>
        
@@ -31,7 +46,7 @@ const About = () => {
                 <meta name="description" content="A UX/UI designer passionate about creating meaningful, user-centered digital experiences." />
             </Helmet>
         <Navbar/>
-        <div className='imagewdiv'>
+        {/* <div className='imagewdiv'>
             <img src={arrowdecor} alt="three lines textdecor" className='marginleft'/>
         <SectionTitle sectiontitlename="About Me"/>
         <p className='aboutBg'>
@@ -39,12 +54,39 @@ const About = () => {
         </p>
 <img src={aboutimages} alt="project mockups" className='imgwidth22'/>
       
-           
+            
+        </div> */}
+             {/* {
+           headers.map((head)=>{
+             return     <div className='imagewdiv'>
+            <img src={arrowdecor} alt="three lines textdecor" className='marginleft'/>
+        <SectionTitle sectiontitlename={head.title}/>
+        <p className='aboutBg'>
+            I’m a very passionate UX/UI Designer who creates interfaces that are both visually attractive and user centered. I create designs through mobile Apps, websites, graphics and more. Im always determined to come up with solutions that would best benefit my target users. This dedication helps me go an extra mile in order to achieve best possible UX solutions.
+        </p>
+<img src={aboutimages} alt="project mockups" className='imgwidth22'/>
+      
             
         </div>
+            })
+          } */}
 <div className='imagewdiv'>
             <SectionTitle sectiontitlename="Core Values"/>
-            <div className='forvalueCards'>
+             <div className='forvalueCards'>
+
+                {
+           val.map((valuedetail)=>{
+             return     <ValueCard
+                numberimg={valuedetail.image}
+                 valuetitle={valuedetail.title}
+                valuedes={valuedetail.description}/>
+                 
+
+           
+            })
+          }
+             </div>
+            {/* <div className='forvalueCards'>
                 <ValueCard
                 numberimg={number1}
                  valuetitle="Emapthy-Driven Design"
@@ -71,7 +113,7 @@ const About = () => {
                 valuedes="Foster open, honest, and clear dialogue to build trust and ensure all users are aligned."/>
 
 
-            </div>
+            </div> */}
 
 
 
