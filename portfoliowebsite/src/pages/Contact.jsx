@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component, useState } from 'react';
 import "./Contact.css"
 import Navbar from '../components/Navbar';
 import FilledButton from '../components/FilledButton';
@@ -14,6 +14,13 @@ import Footer from '../components/Footer';
 import { Helmet } from 'react-helmet';
 
 const Contact = () => {
+    const [title,setTitle] = useState("");
+        const [email,setEmail] = useState("");
+    const [msg,setMsg] = useState("");
+    function test(){
+        console.log(title);
+    }
+
     return ( 
         
         <>
@@ -60,13 +67,13 @@ const Contact = () => {
     </div>
     <div class="inputDivholder">
         <div class="twoinputs">
-            <input class="nameinput" type="text" name="" id="" placeholder="First Name"/>
+            <input onChange={(i)=>{setTitle(i.target.value)}} class="nameinput" type="text" name="" id="" placeholder="First Name"/>
                         <input class="nameinput" type="text" name="" id="" placeholder="First Name"/>
 
         </div>
         <input class="nameinput longerwidth" type="text" name="" id="" placeholder="Email"/>
         <input class="nameinput p2" type="text" name="" id="" placeholder="Enter your message here.."/>
-       <div className='submitButton'>
+       <div onClick={()=>{console.log(title);}} className='submitButton'>
         <p className='subButton'>Submit</p>
        </div>
 

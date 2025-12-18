@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component, useEffect, useState } from 'react';
 import "./Works.css"
 import Navbar from '../components/Navbar';
 import imgtitle from "../assets/workss.svg"
@@ -15,11 +15,25 @@ import SubscriptionSection from '../components/SubscriptionSection';
 import Footer from '../components/Footer';
 import {Link} from 'react-router-dom'
 import { Helmet } from 'react-helmet';
+import { supabase } from '../Supabase';
 
 
 
 
 const Works = () => {
+  const [loading, setLoading] = useState(true);
+              const [projects, setprojects] = useState("");
+        
+              useEffect(()=>{
+                    async function callGetAPI3(){
+                          const res = await supabase.from("Projects").select("*");
+                          setprojects(res.data);
+                          // console.log(res);
+                          setLoading(false);
+                    }
+                    callGetAPI3();
+              },[]);
+              if (loading) return <p>Loading...</p>;
     return (
       
         <>
@@ -50,10 +64,24 @@ const Works = () => {
     {/* <div className="forallcards">
 
     </div> */}
-             
 
+
+         <div className='forallcards'>
+            <div className='textwcards'>       
+  {
+
+           projects.map((project)=>{
+             return     <ProjectCard projectName2={project.title}
+                projectimgbg={project.image_2}
+                projectDes2={project.description}/>
+                
+            })
+          }
+          </div>
+           </div>
         <div className='forallcards'>
             <div className='textwcards'>
+
           <Link to="/works/p1"  style={{ textDecoration: 'none'}}>
                   <ProjectCard projectName2="Art Mentor App"
                 projectimgbg={projectimg6}
