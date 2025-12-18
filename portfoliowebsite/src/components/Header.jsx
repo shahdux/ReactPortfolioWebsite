@@ -1,20 +1,37 @@
-import React, { Component } from 'react';
+import React, { Component, useEffect, useState } from 'react';
 import "./Header.css"
 import Strokebutton from './Strokebutton';
 import downloadicon from '../assets/download.svg';
 import arrow from '../assets/bluearrow.svg';
 import FilledButton from './FilledButton';
 import displayCards from '../assets/hero2.svg';
+import { supabase } from '../Supabase';
 
 
 
 const Header = () => {
     
+        const [loading, setLoading] = useState(true);
+                const [headers, setHeader] = useState("");
+          
+                useEffect(()=>{
+                      async function callGetAPIs(){
+                            const res = await supabase.from("Header").select("*").eq("id", 2);
+                            setHeader(res.data);
+                            // console.log(res);
+                            setLoading(false);
+                      }
+                      callGetAPIs();
+                },[]);
+                if (loading) return <p>Loading...</p>;
+    
     return ( 
        <>
-       <div className='heroSection'>
-           <h6 className="heroText">HI, I am</h6>
-          <h1 className="titles">Shahd Mohammad, a UI/UX Designer &  Front-End Developer. I design experiences that connect empathy with creativity. </h1>
+        {
+           headers.map((header)=>{
+             return     <div className='heroSection'>
+           <h6 className="heroText">{header.title}</h6>
+          <h1 className="titles">{header.description}</h1>
 
       
     
@@ -29,10 +46,16 @@ const Header = () => {
            />
            
         </div>
-    <img src={displayCards} alt="" className="hero2" />
+    <img src={header.image} alt="" className="hero2" />
     
 
        </div>
+                 
+
+           
+            })
+          }
+      
        
        
        
