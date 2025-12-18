@@ -30,19 +30,12 @@ const About = () => {
 
          
                useEffect(()=>{
-                    //  async function callGetAPI9(){
-                    //        const res = await supabase.from("values").select("*");
-                    //        setVal(res.data);
-                    //        // console.log(res);
-                    //     //    setLoading(false); 
-                    //  }
-                    //  callGetAPI9();
+                 
                      async function callGetAPI10(){
                            const res = await supabase.from("Header").select("*").limit(1)
                            setHeaders(res.data);
                            const res2 = await supabase.from("values").select("*");
                            setVal(res2.data);
-                        //    console.log(res.data);
                            setLoading(false);
                      }
                      callGetAPI10();

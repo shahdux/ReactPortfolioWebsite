@@ -32,6 +32,9 @@
     justify-content: center;
     /* gap: 38px; */
 }
+.marginb90{
+        margin-bottom: 90px;
+}
 @media (max-width: 1400px) {
     .topics{
         gap: 3%;

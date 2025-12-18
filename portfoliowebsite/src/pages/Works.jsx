@@ -26,7 +26,8 @@ const Works = () => {
         
               useEffect(()=>{
                     async function callGetAPI3(){
-                          const res = await supabase.from("Projects").select("*");
+                          const res = await supabase.from("Projects").select("*").order("created_at", { ascending: true })
+  .limit(3);;
                           setprojects(res.data);
                           // console.log(res);
                           setLoading(false);
@@ -66,7 +67,7 @@ const Works = () => {
     </div> */}
 
 
-         <div className='forallcards'>
+         <div className='forallcards marginb90'>
             <div className='textwcards'>       
   {
 
@@ -79,7 +80,7 @@ const Works = () => {
           }
           </div>
            </div>
-        <div className='forallcards'>
+        {/* <div className='forallcards'>
             <div className='textwcards'>
 
           <Link to="/works/p1"  style={{ textDecoration: 'none'}}>
@@ -115,7 +116,7 @@ const Works = () => {
                 projectimgbg={projectimg5}
                 projectDes2="A 3D interactive story-telling website that immerses users....[+]"/>
             </div>
-        </div>
+        </div> */}
         <SubscriptionSection/>
         <Footer/>
         

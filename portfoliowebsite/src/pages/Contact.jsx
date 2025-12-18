@@ -12,14 +12,15 @@ import FAQs from '../components/FAQs';
 import SubscriptionSection from '../components/SubscriptionSection';
 import Footer from '../components/Footer';
 import { Helmet } from 'react-helmet';
+import { supabase } from '../Supabase';
 
 const Contact = () => {
     const [title,setTitle] = useState("");
-        const [email,setEmail] = useState("");
+        const [Email,setEmail] = useState("");
     const [msg,setMsg] = useState("");
-    function test(){
-        console.log(title);
-    }
+   async function sendMsg(){
+const res = await supabase.from("contact").insert({"first_name":title,"email":Email,"message":msg});
+  }
 
     return ( 
         
@@ -71,9 +72,9 @@ const Contact = () => {
                         <input class="nameinput" type="text" name="" id="" placeholder="First Name"/>
 
         </div>
-        <input class="nameinput longerwidth" type="text" name="" id="" placeholder="Email"/>
-        <input class="nameinput p2" type="text" name="" id="" placeholder="Enter your message here.."/>
-       <div onClick={()=>{console.log(title);}} className='submitButton'>
+        <input onChange={(i)=>{setEmail(i.target.value)}} class="nameinput longerwidth" type="text" name="" id="" placeholder="Email"/>
+        <input onChange={(i)=>{setMsg(i.target.value)}} class="nameinput p2" type="text" name="" id="" placeholder="Enter your message here.."/>
+       <div onClick={sendMsg} className='submitButton'>
         <p className='subButton'>Submit</p>
        </div>
 
