@@ -56,12 +56,16 @@ const Home = () => {
 
   const [loading, setLoading] = useState(true);
   const [categories, setCategories] = useState([]);
+    const [featureprojects, setfeatureprojects] = useState([]);
+
 
   /* ================= FETCH CATEGORIES ================= */
   useEffect(() => {
     async function fetchCategories() {
       const { data } = await supabase.from("Categories").select("*");
       setCategories(data || []);
+  const res = await supabase.from("Projects").select("*").in("id", [1, 5, 7]);
+        setfeatureprojects(res.data);
       setLoading(false);
     }
     fetchCategories();
@@ -103,7 +107,6 @@ const Home = () => {
   }, [loading]);
 
   if (loading) return <p>Loading...</p>;
-  
     return ( 
 
         <><Helmet>
@@ -138,7 +141,18 @@ const Home = () => {
 
             </div>
             <div className='for3projects'>
-                <FeaturedCard
+                 {
+           featureprojects.map((featuredproject)=>{
+             return    <FeaturedCard
+                projectTitlename={featuredproject.title}
+                projectbgimg={featuredproject.img3bg}
+                                projectimg={featuredproject.imag3}
+
+                projectDescription={featuredproject.description3}
+                />
+            })
+          }
+                {/* <FeaturedCard
                 projectTitlename="Domty Rebranding"
                 projectbgimg={redbg}
                                 projectimg={domty}
@@ -159,7 +173,7 @@ const Home = () => {
                   projectbgimg={p2bg}
                                 projectimg={story}
                 projectDescription="A 3D interactive story-telling website that immerses users into a captivating experience.  "
-                />
+                /> */}
                 
             </div>
 
