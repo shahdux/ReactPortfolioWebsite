@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import "./Home.css";
 import Navbar from '../components/Navbar';
 import Header from '../components/Header';
@@ -25,8 +25,9 @@ import motion from "../assets/motion.svg";
 import BounceCards from '../components/BounceCards'
 import SubscriptionSection from '../components/SubscriptionSection';
 import Footer from '../components/Footer';
-import videobg from "../assets/vd1.mp4";
+import videobg from "../assets/Recording19.mp4";
 import { Helmet } from "react-helmet";
+import { supabase } from "../Supabase";
 
 
 
@@ -39,41 +40,70 @@ import { Helmet } from "react-helmet";
 
 
 const Home = () => {
+    const scrollRef = useRef(null);
+
   const images = [
-  "https://picsum.photos/400/400?grayscale",
-  "https://picsum.photos/500/500?grayscale",
-  "https://picsum.photos/600/600?grayscale",
- 
-];
+    "https://picsum.photos/400/400?grayscale",
+    "https://picsum.photos/500/500?grayscale",
+    "https://picsum.photos/600/600?grayscale",
+  ];
 
-const transformStyles = [
-  "rotate(5deg) translate(-150px)",
-  "rotate(0deg) translate(-70px)",
-  "rotate(-5deg)",
-  
-];
-const scrollRef = useRef(null);
+  const transformStyles = [
+    "rotate(5deg) translate(-150px)",
+    "rotate(0deg) translate(-70px)",
+    "rotate(-5deg)",
+  ];
 
+  const [loading, setLoading] = useState(true);
+  const [categories, setCategories] = useState([]);
+
+  /* ================= FETCH CATEGORIES ================= */
   useEffect(() => {
+    async function fetchCategories() {
+      const { data } = await supabase.from("Categories").select("*");
+      setCategories(data || []);
+      setLoading(false);
+    }
+    fetchCategories();
+  }, []);
+
+  /* ================= SCROLL EFFECT ================= */
+  useEffect(() => {
+    if (loading) return;
+
     const section = scrollRef.current;
+    if (!section) return;
 
     const handleScroll = () => {
+      const categoriesEls = section.querySelectorAll(".categories");
+      if (!categoriesEls.length) return;
+
       const scrollTop = window.scrollY;
       const sectionTop = section.offsetTop;
       const sectionHeight = section.offsetHeight;
 
       const scrollProgress = Math.min(
-        Math.max((scrollTop - sectionTop) / (sectionHeight - window.innerHeight), 0),
+        Math.max(
+          (scrollTop - sectionTop) /
+          (sectionHeight - window.innerHeight),
+          0
+        ),
         1
       );
 
-      const translateX = scrollProgress * -200; 
-      section.querySelector(".categories").style.transform = `translateX(${translateX}vw)`;
+      const translateX = scrollProgress * -200;
+
+      categoriesEls.forEach(el => {
+        el.style.transform = `translateX(${translateX}vw)`;
+      });
     };
 
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
+  }, [loading]);
+
+  if (loading) return <p>Loading...</p>;
+  
     return ( 
 
         <><Helmet>
@@ -138,8 +168,18 @@ const scrollRef = useRef(null);
     <video src={videobg} class="imgst2" autoPlay loop></video>
 </div>
        <div className='horizontal-scroll-section' ref={scrollRef}>
-
-<div className="categories">
+         <div className="categories">
+ {
+           categories.map((category)=>{
+             return <ProjectCategoryCard
+projectcategoryimg={category.Image}
+projecttitle={category.Name}
+projectdescription={category.description2}
+/>
+            })
+          }
+</div> 
+{/* <div className="categories">
 
 <ProjectCategoryCard
 projectcategoryimg={projectimg}
@@ -164,7 +204,7 @@ projectdescription="Animated visuals that bring stories, concepts, and interface
 
 
 
-</div>
+</div> */}
        </div>
 
 <div className='testimonialsSection'>

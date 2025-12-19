@@ -50,7 +50,7 @@ display: flex;
     width: 80%;
     margin: 0 ;
     margin-top: 20px;
-    border-radius: 35px;
+    /* border-radius: 35px; */
 }
 .categories{
     /* display: flex;
