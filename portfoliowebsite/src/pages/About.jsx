@@ -28,6 +28,7 @@ const About = () => {
                const [val, setVal] = useState("");
                               const [headers, setHeaders] = useState("");
 
+
          
                useEffect(()=>{
                  
@@ -36,6 +37,7 @@ const About = () => {
                            setHeaders(res.data);
                            const res2 = await supabase.from("values").select("*");
                            setVal(res2.data);
+                            
                            setLoading(false);
                      }
                      callGetAPI10();
@@ -122,6 +124,7 @@ const About = () => {
 
 
 </div>
+
 <div className='elevatediv'>
     <p className='elevatetext'>I Can help elevate your work today!</p>
   

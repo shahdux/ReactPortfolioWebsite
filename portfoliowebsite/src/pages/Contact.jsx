@@ -83,12 +83,13 @@ const Contact = () => {
     <div class="inputDivholder">
         <div class="twoinputs">
             <input onChange={(i)=>{setTitle(i.target.value)}} class="nameinput" type="text" name="" id="" placeholder="First Name"/>
-                        <input class="nameinput" type="text" name="" id="" placeholder="First Name"/>
+                        <input class="nameinput" type="text" name="" id="" placeholder="Last Name"/>
 
         </div>
         <input onChange={(i)=>{setEmail(i.target.value)}} class="nameinput longerwidth" type="text" name="" id="" placeholder="Email"/>
         <input onChange={(i)=>{setMsg(i.target.value)}} class="nameinput p2" type="text" name="" id="" placeholder="Enter your message here.."/>
        <div onClick={sendMsg} className='submitButton'>
+       
         <p className='subButton'>Submit</p>
        </div>
 
@@ -114,14 +115,13 @@ const Contact = () => {
   <SectionTitle sectiontitlename="Frequently Asked Questions" />
 
   <div className='forvalueCards alignstart' style={{ display: 'flex', gap: '20px' }}>
-    {/* Left column */}
     <div style={{ flex: 1, display: 'flex', flexDirection: 'column', gap: '20px' }}>
       {faqs.slice(0, 3).map((faq) => (
         <FAQs key={faq.id} question={faq.question_EN} answer={faq.answer_EN} />
       ))}
     </div>
 
-    {/* Right column */}
+   
     <div style={{ flex: 1, display: 'flex', flexDirection: 'column', gap: '20px' }}>
       {faqs.slice(3, 6).map((faq) => (
         <FAQs key={faq.id} question={faq.question_EN} answer={faq.answer_EN} />
